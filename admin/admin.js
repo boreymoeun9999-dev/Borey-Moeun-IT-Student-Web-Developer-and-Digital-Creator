@@ -3,7 +3,7 @@ const projectsKey = 'portfolioProjects';
 const profileKey = 'portfolioProfile';
 const defaultProjectCount = 4;
 const defaultProfile = {
-  name: 'BOREY MOEUN', role: 'IT Student & Future Wep Programming', status: 'Available for Learning & Opportunities',
+  name: 'BOREY MOEUN', role: 'IT Student & Future Web Programmer', status: 'Available for Learning & Opportunities',
   heroDescription: "I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.",
   image: '/img/1.png', aboutText: "I'm a first-year student at Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.",
   statement: '"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."',

@@ -231,8 +231,78 @@ h4 {
         linear-gradient(var(--border) 1px, transparent 1px),
         linear-gradient(90deg, var(--border) 1px, transparent 1px);
     background-size: 52px 52px;
-    opacity: .35;
+    opacity: .28;
     mask-image: radial-gradient(circle at 50% 20%, black, transparent 75%);
+    animation: gridDrift 24s linear infinite;
+}
+
+.digital-network {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .7;
+    background:
+        radial-gradient(ellipse at 12% 18%, rgba(76, 126, 255, .16), transparent 38%),
+        radial-gradient(ellipse at 88% 82%, rgba(56, 224, 138, .1), transparent 34%),
+        radial-gradient(circle at 17% 24%, rgba(127, 162, 255, .7) 0 2px, transparent 3px),
+        radial-gradient(circle at 83% 19%, rgba(56, 224, 138, .65) 0 2px, transparent 3px),
+        radial-gradient(circle at 73% 76%, rgba(139, 92, 246, .7) 0 2px, transparent 3px),
+        linear-gradient(115deg, transparent 0 18%, rgba(76, 126, 255, .13) 18.1% 18.2%, transparent 18.3% 100%),
+        linear-gradient(25deg, transparent 0 72%, rgba(56, 224, 138, .1) 72.1% 72.2%, transparent 72.3% 100%);
+    background-size: 140% 140%, 140% 140%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    mask-image: radial-gradient(ellipse at center, black 0%, transparent 78%);
+    animation: networkFlow 16s ease-in-out infinite alternate;
+}
+
+.digital-network::before,
+.digital-network::after {
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(127, 162, 255, .16);
+    transform: rotate(-22deg);
+}
+
+.digital-network::before {
+    width: 420px;
+    height: 180px;
+    top: 17%;
+    right: 6%;
+    border-left-color: transparent;
+    border-radius: 16px;
+    box-shadow: 26px 26px 0 -25px rgba(127, 162, 255, .55), 52px 52px 0 -51px rgba(127, 162, 255, .55);
+    animation: circuitPulse 5s ease-in-out infinite;
+}
+
+.digital-network::after {
+    width: 300px;
+    height: 130px;
+    bottom: 16%;
+    left: 4%;
+    border-right-color: transparent;
+    border-radius: 12px;
+    box-shadow: -22px -22px 0 -21px rgba(56, 224, 138, .45), -44px -44px 0 -43px rgba(56, 224, 138, .45);
+    animation: circuitPulse 7s ease-in-out infinite reverse;
+}
+
+@keyframes networkFlow {
+    0% {
+        background-position: 0% 0%, 100% 100%, 0 0, 0 0, 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 18% 12%, 82% 88%, 0 0, 0 0, 0 0, 52px 52px, -34px 34px;
+    }
+}
+
+@keyframes circuitPulse {
+    0%, 100% { opacity: .35; }
+    50% { opacity: 1; }
+}
+
+@keyframes gridDrift {
+    from { background-position: 0 0, 0 0; }
+    to { background-position: 52px 52px, 52px 52px; }
 }
 
 .glow-orb {
