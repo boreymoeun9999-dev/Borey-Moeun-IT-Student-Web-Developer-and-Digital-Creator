@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Borey.dev</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="glow-orb glow-1" aria-hidden="true"></div>
+<div class="glow-orb glow-2" aria-hidden="true"></div>
+<main class="admin-dashboard-page">
+  <header class="admin-topbar">
+    <a href="../index.html" class="admin-brand"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
+    <div class="admin-top-actions"><span class="admin-mode"><span></span>Authenticated</span><button type="button" class="btn btn-outline btn-sm" id="adminLogoutBtn">Log out</button></div>
+  </header>
+  <section class="admin-dashboard-content">
+    <div class="eyebrow">Admin workspace</div>
+    <div class="admin-heading"><div><h1 class="section-title">Portfolio Control Center</h1><p class="section-sub">A quick view of your portfolio content and current activity.</p></div></div>
+    <div class="admin-stats">
+      <div class="admin-stat-card glass"><span class="admin-stat-icon">◈</span><div><strong id="publishedProjectCount">04</strong><span>Published projects</span></div><em>+1 this month</em></div>
+      <div class="admin-stat-card glass"><span class="admin-stat-icon">✉</span><div><strong>03</strong><span>Unread messages</span></div><em class="warning">Needs review</em></div>
+      <div class="admin-stat-card glass"><span class="admin-stat-icon">↗</span><div><strong>78%</strong><span>Profile completeness</span></div><em>On track</em></div>
+      <div class="admin-stat-card glass"><span class="admin-stat-icon">✓</span><div><strong>12</strong><span>Technologies listed</span></div><em>Up to date</em></div>
+    </div>
+    <div class="admin-layout">
+      <section class="admin-panel glass admin-project-editor">
+        <div class="admin-panel-head"><div><div class="dashboard-kicker">Site content</div><h2>Profile and contact information</h2></div><span class="admin-updated">Saved in this browser</span></div>
+        <form id="profileForm" class="admin-form">
+          <div class="admin-form-grid">
+            <label>Full name<input name="name" type="text" required></label>
+            <label>Professional role<input name="role" type="text" required></label>
+            <label class="admin-form-wide">Availability status<input name="status" type="text" required></label>
+            <label class="admin-form-wide">Hero description<textarea name="heroDescription" rows="3" required></textarea></label>
+            <label class="admin-form-wide">Profile image URL<input name="image" type="url" required></label>
+            <label class="admin-form-wide">About description<textarea name="aboutText" rows="4" required></textarea></label>
+            <label class="admin-form-wide">About statement<textarea name="statement" rows="3" required></textarea></label>
+            <label class="admin-form-wide">Skills <small>(one per line: category | name | level | percent)</small><textarea name="skillsText" rows="6" required></textarea></label>
+            <label class="admin-form-wide">Technologies <small>(one per line: icon | name | description)</small><textarea name="technologyText" rows="6" required></textarea></label>
+            <label>Education<input name="education" type="text" required></label>
+            <label>Major<input name="major" type="text" required></label>
+            <label>Generation<input name="generation" type="text" required></label>
+            <label>Location<input name="location" type="text" required></label>
+            <label class="admin-form-wide">Career goal<input name="goal" type="text" required></label>
+            <label>Email<input name="email" type="email" required></label>
+            <label>Phone<input name="phone" type="text" required></label>
+            <label>Contact location<input name="contactLocation" type="text" required></label>
+            <label>CV URL<input name="cvUrl" type="url" placeholder="https://..."></label>
+            <label>GitHub URL<input name="github" type="url"></label>
+            <label>LinkedIn URL<input name="linkedin" type="url"></label>
+            <label>Facebook URL<input name="facebook" type="url"></label>
+            <label>Telegram URL<input name="telegram" type="url"></label>
+          </div>
+          <div class="admin-form-actions"><button type="submit" class="btn btn-primary">Save site information</button><button type="reset" class="btn btn-outline">Clear</button><span id="profileFormMessage" role="status"></span></div>
+        </form>
+      </section>
+      <section class="admin-panel glass admin-project-editor">
+        <div class="admin-panel-head"><div><div class="dashboard-kicker">Add content</div><h2>New project information</h2></div><span class="admin-updated">Saved in this browser</span></div>
+        <form id="projectForm" class="admin-form">
+          <div class="admin-form-grid">
+            <label>Project title<input id="projectTitle" name="title" type="text" required></label>
+            <label>Category<select id="projectCategory" name="category" required><option value="frontend">Frontend</option><option value="fullstack">Full stack</option><option value="concept">Concept</option></select></label>
+            <label class="admin-form-wide">Image URL<input id="projectImage" name="img" type="url" placeholder="https://..." required></label>
+            <label class="admin-form-wide">Short description<textarea id="projectDescription" name="desc" rows="3" required></textarea></label>
+            <label>Technologies <small>(comma separated)</small><input id="projectTech" name="tech" type="text" placeholder="HTML, CSS, JavaScript" required></label>
+            <label>Features <small>(comma separated)</small><input id="projectFeatures" name="features" type="text" placeholder="Responsive layout, Contact form" required></label>
+            <label>Overview<textarea id="projectOverview" name="overview" rows="3" required></textarea></label>
+            <label>Problem<textarea id="projectProblem" name="problem" rows="3" required></textarea></label>
+            <label>Solution<textarea id="projectSolution" name="solution" rows="3" required></textarea></label>
+            <label>Challenges<textarea id="projectChallenges" name="challenges" rows="3" required></textarea></label>
+            <label class="admin-form-wide">What I learned<textarea id="projectLearned" name="learned" rows="3" required></textarea></label>
+          </div>
+          <div class="admin-form-actions"><button type="submit" class="btn btn-primary">Add project</button><button type="reset" class="btn btn-outline">Clear</button><span id="projectFormMessage" role="status"></span></div>
+        </form>
+      </section>
+      <section class="admin-panel glass"><div class="admin-panel-head"><div><div class="dashboard-kicker">Content overview</div><h2>Portfolio sections</h2></div><span class="admin-updated">Updated today</span></div><div class="admin-list">
+        <div class="admin-list-row"><span class="admin-list-mark complete">✓</span><div><strong>About &amp; profile</strong><small>Personal details and introduction</small></div><span class="admin-list-status">Complete</span></div>
+        <div class="admin-list-row"><span class="admin-list-mark complete">✓</span><div><strong>Skills &amp; technology</strong><small>12 tools and learning progress</small></div><span class="admin-list-status">Complete</span></div>
+        <div class="admin-list-row"><span class="admin-list-mark pending">!</span><div><strong>Projects and contact</strong><small>Replace placeholder links and details</small></div><span class="admin-list-status pending-text">Review</span></div>
+      </div></section>
+      <section class="admin-panel glass"><div class="admin-panel-head"><div><div class="dashboard-kicker">Recent activity</div><h2>Workspace updates</h2></div><span class="admin-live-dot"></span></div><div class="activity-list">
+        <div class="activity-item"><span class="activity-icon blue">✦</span><div><strong>Technology section updated</strong><small>Today · Active card interactions added</small></div></div>
+        <div class="activity-item"><span class="activity-icon purple">↗</span><div><strong>Learning dashboard added</strong><small>Yesterday · Progress overview published</small></div></div>
+        <div class="activity-item"><span class="activity-icon green">✓</span><div><strong>Portfolio structure checked</strong><small>Aug 24 · Responsive layout verified</small></div></div>
+      </div><div class="admin-actions"><a href="../index.html#projects" class="btn btn-primary btn-sm">Manage projects</a><a href="../index.html#contact" class="btn btn-outline btn-sm">View messages</a></div></section>
+    </div>
+  </section>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>

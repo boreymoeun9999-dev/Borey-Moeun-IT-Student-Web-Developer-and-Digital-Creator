@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login | Borey.dev</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="glow-orb glow-1" aria-hidden="true"></div>
+<div class="glow-orb glow-2" aria-hidden="true"></div>
+<main class="admin-shell">
+  <a href="../index.html" class="admin-brand"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
+  <section class="admin-login glass" aria-labelledby="loginTitle">
+    <div class="admin-login-mark" aria-hidden="true">↪</div>
+    <div class="dashboard-kicker">Restricted workspace</div>
+    <h1 id="loginTitle">Admin login</h1>
+    <p>Sign in to manage portfolio content and review activity.</p>
+    <form id="adminLoginForm" novalidate>
+      <label for="adminUsername">Username</label>
+      <input id="adminUsername" type="text" autocomplete="username" placeholder="Enter username" required>
+      <label for="adminPassword">Password</label>
+      <input id="adminPassword" type="password" autocomplete="current-password" placeholder="Enter password" required>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+      <div class="admin-login-message" id="adminLoginMessage" role="alert"></div>
+    </form>
+    <span class="admin-demo-note">Demo account: admin / admin123</span>
+  </section>
+  <a href="../index.html" class="admin-back-link">Return to portfolio</a>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>

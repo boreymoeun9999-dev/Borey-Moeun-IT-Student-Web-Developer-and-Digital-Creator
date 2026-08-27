@@ -43,6 +43,9 @@
       </div>
       <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">🌙</button>
+        <a href="/admin/" class="login-icon" aria-label="Open admin login" title="Admin login">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
+        </a>
         <a href="#" class="btn btn-primary btn-sm" id="downloadCvBtn">Download CV</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
@@ -62,6 +65,7 @@
   <a href="#achievements">Achievements</a>
   <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
+  <a href="admin/">Admin login</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -69,10 +73,10 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="status-badge glass"><span class="pulse"></span> Available for Learning &amp; Opportunities</div>
-        <h1 class="hero-title">Hi, I'm <span class="name grad-text">BOREY MOEUN</span></h1>
-        <div class="hero-role">IT Student &amp; Future Wep Programming<span class="cursor"></span></div>
-        <p class="hero-desc">I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.</p>
+        <div class="status-badge glass"><span class="pulse"></span> <span data-profile="status">Available for Learning &amp; Opportunities</span></div>
+        <h1 class="hero-title">Hi, I'm <span class="name grad-text" data-profile="name">BOREY MOEUN</span></h1>
+        <div class="hero-role" data-profile="role">IT Student &amp; Future Wep Programming<span class="cursor"></span></div>
+        <p class="hero-desc" data-profile="heroDescription">I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.</p>
         <div class="hero-btns">
           <a href="#projects" class="btn btn-primary">View My Projects</a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -87,7 +91,7 @@
         <div style="position:relative;">
           <div class="avatar-ring" aria-hidden="true"></div>
           <div class="avatar-frame">
-            <img src="/img/1.png" alt="Placeholder professional profile photo of Sokha Chan, IT student">
+            <img src="/img/1.png" alt="Professional profile photo" data-profile-image="image">
           </div>
           <div class="terminal glass">
             <div class="terminal-bar"><span></span><span></span><span></span></div>
@@ -116,14 +120,14 @@
         <div class="code-chip glass">&lt;/&gt; building since 2026</div>
       </div>
       <div class="reveal">
-        <p style="color:var(--text-dim); font-size:15.5px;">I'm a first-year student at <strong style="color:var(--white)">Passerelles Numériques Cambodia</strong>, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.</p>
-        <div class="about-statement">"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."</div>
+        <p style="color:var(--text-dim); font-size:15.5px;" data-profile="aboutText">I'm a first-year student at Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.</p>
+        <div class="about-statement" data-profile="statement">"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."</div>
         <div class="info-cards">
-          <div class="info-card glass"><div class="ic-label">🎓 Education</div><div class="ic-value">Passerelles Numériques Cambodia</div></div>
-          <div class="info-card glass"><div class="ic-label">💻 Major</div><div class="ic-value">Web Programming</div></div>
-          <div class="info-card glass"><div class="ic-label">📅 Generation</div><div class="ic-value">2027</div></div>
-          <div class="info-card glass"><div class="ic-label">🌍 Location</div><div class="ic-value">Cambodia</div></div>
-          <div class="info-card glass" style="grid-column:1 / -1;"><div class="ic-label">🚀 Goal</div><div class="ic-value">Become a Professional Developer</div></div>
+          <div class="info-card glass"><div class="ic-label">🎓 Education</div><div class="ic-value" data-profile="education">Passerelles Numériques Cambodia</div></div>
+          <div class="info-card glass"><div class="ic-label">💻 Major</div><div class="ic-value" data-profile="major">Web Programming</div></div>
+          <div class="info-card glass"><div class="ic-label">📅 Generation</div><div class="ic-value" data-profile="generation">2027</div></div>
+          <div class="info-card glass"><div class="ic-label">🌍 Location</div><div class="ic-value" data-profile="location">Cambodia</div></div>
+          <div class="info-card glass" style="grid-column:1 / -1;"><div class="ic-label">🚀 Goal</div><div class="ic-value" data-profile="goal">Become a Professional Developer</div></div>
         </div>
       </div>
     </div>
@@ -151,25 +155,25 @@
       <button class="skill-tab" data-tab="tools">Tools</button>
     </div>
 
-    <div class="skill-panel active" id="panel-frontend">
+    <div class="skill-panel active" id="panel-frontend" data-skill-category="frontend">
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">HTML5</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">CSS3</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">JavaScript</span><span class="skill-level">Learning</span></div><div class="bar-track"><div class="bar-fill" data-w="50"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Responsive Design</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="65"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">React.js</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
     </div>
-    <div class="skill-panel" id="panel-backend">
+    <div class="skill-panel" id="panel-backend" data-skill-category="backend">
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Node.js</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Python</span><span class="skill-level">Learning</span></div><div class="bar-track"><div class="bar-fill" data-w="45"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Flask</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="25"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">REST API</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
     </div>
-    <div class="skill-panel" id="panel-database">
+    <div class="skill-panel" id="panel-database" data-skill-category="database">
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">MySQL</span><span class="skill-level">Learning</span></div><div class="bar-track"><div class="bar-fill" data-w="40"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">SQLite</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">MongoDB</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="20"></div></div></div>
     </div>
-    <div class="skill-panel" id="panel-tools">
+    <div class="skill-panel" id="panel-tools" data-skill-category="tools">
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Git</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">GitHub</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
       <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">VS Code</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
@@ -185,7 +189,7 @@
     <div class="eyebrow reveal">Toolkit</div>
     <h2 class="section-title reveal">Technologies I Work With</h2>
     <p class="section-sub reveal">Hover a card to see how I use it.</p>
-    <div class="tech-grid reveal-stagger">
+    <div class="tech-grid reveal-stagger" id="technologyGrid">
       <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟧</div><div class="tc-name">HTML5</div><div class="tc-desc glass">Semantic structure for accessible, SEO-friendly pages.</div></div>
       <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟦</div><div class="tc-name">CSS3</div><div class="tc-desc glass">Layouts, animations, and responsive styling.</div></div>
       <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟨</div><div class="tc-name">JavaScript</div><div class="tc-desc glass">Interactivity, DOM logic, and dynamic behavior.</div></div>
@@ -201,7 +205,6 @@
     </div>
   </div>
 </section>
-
 <!-- ============ PROJECTS ============ -->
 <section id="projects" style="background:var(--bg-alt);">
   <div class="container">
@@ -410,15 +413,15 @@
     <div class="contact-grid">
       <div class="reveal">
         <div class="contact-info-list">
-          <div class="contact-info-item glass"><div class="cii-icon">✉️</div><div><div class="cii-label">Email</div><div class="cii-value">boreymoeun9999@gmail.com</div></div></div>
-          <div class="contact-info-item glass"><div class="cii-icon">📱</div><div><div class="cii-label">Phone</div><div class="cii-value">+855 878 792 47</div></div></div>
-          <div class="contact-info-item glass"><div class="cii-icon">📍</div><div><div class="cii-label">Location</div><div class="cii-value">Phnom Penh, Cambodia</div></div></div>
+          <div class="contact-info-item glass"><div class="cii-icon">✉️</div><div><div class="cii-label">Email</div><div class="cii-value" data-profile="email">boreymoeun9999@gmail.com</div></div></div>
+          <div class="contact-info-item glass"><div class="cii-icon">📱</div><div><div class="cii-label">Phone</div><div class="cii-value" data-profile="phone">+855 878 792 47</div></div></div>
+          <div class="contact-info-item glass"><div class="cii-icon">📍</div><div><div class="cii-label">Location</div><div class="cii-value" data-profile="contactLocation">Phnom Penh, Cambodia</div></div></div>
         </div>
         <div class="social-row">
-          <a href="#" class="social-btn glass" aria-label="GitHub">🐙</a>
-          <a href="#" class="social-btn glass" aria-label="LinkedIn">💼</a>
-          <a href="#" class="social-btn glass" aria-label="Facebook">📘</a>
-          <a href="#" class="social-btn glass" aria-label="Telegram">✈️</a>
+          <a href="#" class="social-btn glass" aria-label="GitHub" data-profile-link="github">🐙</a>
+          <a href="#" class="social-btn glass" aria-label="LinkedIn" data-profile-link="linkedin">💼</a>
+          <a href="#" class="social-btn glass" aria-label="Facebook" data-profile-link="facebook">📘</a>
+          <a href="#" class="social-btn glass" aria-label="Telegram" data-profile-link="telegram">✈️</a>
         </div>
         <p class="placeholder-note">* All contact details above are placeholders — replace with your real information.</p>
       </div>
@@ -475,10 +478,43 @@ themeToggle.addEventListener('click', ()=>{
   applyTheme(next);
 });
 
+const defaultProfile = {
+  name: 'BOREY MOEUN', role: 'IT Student & Future Wep Programming', status: 'Available for Learning & Opportunities',
+  heroDescription: "I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.",
+  image: '/img/1.png', aboutText: "I'm a first-year student at Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.",
+  statement: '"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."',
+  skillsText: 'frontend | HTML5 | Intermediate | 75\nfrontend | CSS3 | Intermediate | 70\nfrontend | JavaScript | Learning | 50\nbackend | Node.js | Beginner | 30\nbackend | Python | Learning | 45\ndatabase | MySQL | Learning | 40\ntools | Git | Intermediate | 60\ntools | GitHub | Intermediate | 60',
+  technologyText: '🟧 | HTML5 | Semantic structure for accessible, SEO-friendly pages.\n🟦 | CSS3 | Layouts, animations, and responsive styling.\n🟨 | JavaScript | Interactivity, DOM logic, and dynamic behavior.\n⚛️ | React | Building reusable, component-based interfaces.\n🟩 | Node.js | Server-side JavaScript for backend logic.\n🐍 | Python | Scripting, logic practice, and backend basics.',
+  education: 'Passerelles Numériques Cambodia', major: 'Web Programming', generation: '2027', location: 'Cambodia', goal: 'Become a Professional Developer',
+  email: 'boreymoeun9999@gmail.com', phone: '+855 878 792 47', contactLocation: 'Phnom Penh, Cambodia', cvUrl: '',
+  github: '', linkedin: '', facebook: '', telegram: ''
+};
+const profile = {...defaultProfile, ...JSON.parse(localStorage.getItem('portfolioProfile') || '{}')};
+const parseLines = (value, expectedParts) => value.split('\n').map(line => line.split('|').map(part => part.trim())).filter(parts => parts.length >= expectedParts && parts.every(Boolean));
+document.querySelectorAll('[data-skill-category]').forEach(panel => {
+  const skills = parseLines(profile.skillsText, 4).filter(parts => parts[0] === panel.dataset.skillCategory);
+  if (skills.length) panel.innerHTML = skills.map(([, name, level, percent]) => `<div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">${name}</span><span class="skill-level">${level}</span></div><div class="bar-track"><div class="bar-fill" data-w="${Math.min(100, Math.max(0, Number(percent) || 0))}"></div></div></div>`).join('');
+});
+const technologyGrid = document.getElementById('technologyGrid');
+const technologies = parseLines(profile.technologyText, 3);
+if (technologyGrid && technologies.length) technologyGrid.innerHTML = technologies.map(([icon, name, description]) => `<div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">${icon}</div><div class="tc-name">${name}</div><div class="tc-desc glass">${description}</div></div>`).join('');
+document.querySelectorAll('[data-profile]').forEach(element => {
+  element.textContent = profile[element.dataset.profile] || '';
+});
+document.querySelectorAll('[data-profile-image]').forEach(image => {
+  image.src = profile[image.dataset.profileImage] || defaultProfile.image;
+});
+document.querySelectorAll('[data-profile-link]').forEach(link => {
+  const url = profile[link.dataset.profileLink];
+  if (url) link.href = url;
+  else link.setAttribute('aria-disabled', 'true');
+});
+
 /* ===== Download CV (demo placeholder) ===== */
 [document.getElementById('downloadCvBtn'), document.getElementById('downloadCvBtn2')].forEach(btn=>{
   btn.addEventListener('click', (e)=>{
     e.preventDefault();
+    if(profile.cvUrl){ window.open(profile.cvUrl, '_blank', 'noopener'); return; }
     alert('Add your CV file link or PDF here — this button is a placeholder ready to connect to your résumé.');
   });
 });
@@ -533,7 +569,6 @@ hamburgerBtn.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
 menuOverlay.addEventListener('click', closeMenu);
 document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click', closeMenu));
-
 /* trigger initial visible skill bars (active panel on load) */
 window.addEventListener('load', ()=>{
   document.querySelectorAll('#panel-frontend .bar-fill').forEach(b=> b.style.width = b.dataset.w + '%');
@@ -585,7 +620,7 @@ document.querySelectorAll('.skill-tab').forEach(tab=>{
 });
 
 /* ===== Projects data + render + filter + modal ===== */
-const projects = [
+const defaultProjects = [
   {
     id:'p1', title:'Student Portfolio', category:'frontend',
     img:'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80',
@@ -635,6 +670,8 @@ const projects = [
     learned:'How to write clearly and structure information for readers who are not tech experts.'
   }
 ];
+const savedProjects = JSON.parse(localStorage.getItem('portfolioProjects') || '[]');
+const projects = [...defaultProjects, ...savedProjects];
 
 const grid = document.getElementById('projectsGrid');
 function renderProjects(filter){

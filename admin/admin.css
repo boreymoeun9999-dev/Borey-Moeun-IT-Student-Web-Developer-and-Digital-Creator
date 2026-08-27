@@ -1,0 +1,165 @@
+.admin-page {
+    min-height: 100vh;
+}
+
+.admin-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 22px;
+    padding: 40px 20px;
+}
+
+.admin-brand {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-brand .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--grad-primary);
+    box-shadow: 0 0 12px var(--blue);
+}
+
+.admin-back-link {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.admin-back-link:hover {
+    color: var(--blue-soft);
+}
+
+.admin-dashboard-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.admin-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--border);
+}
+
+.admin-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-dashboard-content {
+    padding: 82px 0 60px;
+}
+
+.admin-dashboard-content .section-sub {
+    margin-bottom: 34px;
+}
+
+.admin-project-editor {
+    margin-bottom: 24px;
+}
+
+.admin-form {
+    margin-top: 24px;
+}
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.admin-form label {
+    color: var(--text-soft);
+    display: grid;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+.admin-form small {
+    color: var(--text-faint);
+    font-size: 10px;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: rgba(6, 12, 24, .72);
+    color: var(--white);
+    padding: 12px;
+    font: inherit;
+    resize: vertical;
+}
+
+.admin-form input:focus,
+.admin-form select:focus,
+.admin-form textarea:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 1px;
+}
+
+.admin-form-wide {
+    grid-column: 1 / -1;
+}
+
+.admin-form-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+#projectFormMessage {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 11px;
+}
+
+@media (max-width: 640px) {
+    .admin-dashboard-page {
+        padding: 20px;
+    }
+
+    .admin-topbar,
+    .admin-top-actions {
+        align-items: flex-start;
+    }
+
+    .admin-topbar {
+        flex-direction: column;
+    }
+
+    .admin-dashboard-content {
+        padding-top: 58px;
+    }
+
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-form-wide {
+        grid-column: auto;
+    }
+
+    .admin-form-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
