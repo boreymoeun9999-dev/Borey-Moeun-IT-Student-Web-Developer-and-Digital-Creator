@@ -12,21 +12,35 @@
 <div class="glow-orb glow-1" aria-hidden="true"></div>
 <div class="glow-orb glow-2" aria-hidden="true"></div>
 <main class="admin-dashboard-page">
+  <aside class="admin-sidebar">
+    <a href="dashboard.html" class="admin-brand"><span class="brand-mark">B</span><span><strong>Borey.dev</strong><small>Admin Center</small></span></a>
+    <nav class="admin-nav" aria-label="Admin navigation">
+      <a class="active" href="#view=overview" data-admin-view="overview"><span>⌂</span>Overview</a>
+      <a href="#view=profile" data-admin-view="profile"><span>⌂</span>Home Page</a>
+      <a href="#view=profile" data-admin-view="profile"><span>▤</span>About Page</a>
+      <a href="#view=projects" data-admin-view="projects"><span>◇</span>Projects</a>
+      <a href="#view=activity" data-admin-view="activity"><span>✦</span>Activities</a>
+      <a href="#view=content" data-admin-view="content"><span>♜</span>Achievements</a>
+      <a href="#view=messages" data-admin-view="messages"><span>✉</span>Messages <b id="sidebarMessageCount">0</b></a>
+      <a href="#view=profile" data-admin-view="profile"><span>⚙</span>Settings</a>
+    </nav>
+    <button type="button" class="admin-signout" id="adminSidebarLogoutBtn">↪ <span>Sign out</span></button>
+  </aside>
+  <div class="admin-main">
   <header class="admin-topbar">
-    <a href="../index.html" class="admin-brand"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
-    <div class="admin-top-actions"><span class="admin-mode"><span></span>Authenticated</span><button type="button" class="btn btn-outline btn-sm" id="adminLogoutBtn">Log out</button></div>
+    <div><div class="dashboard-kicker">Control Center</div><h1>Overview</h1></div>
+    <div class="admin-top-actions"><button type="button" class="admin-icon-button" id="adminThemeToggle" aria-label="Toggle theme">◐</button><a class="admin-website-link" href="../index.html">View website ↗</a><span class="admin-avatar">B</span><button type="button" class="btn btn-outline btn-sm" id="adminLogoutBtn">Log out</button></div>
   </header>
-  <section class="admin-dashboard-content">
-    <div class="eyebrow">Admin workspace</div>
-    <div class="admin-heading"><div><h1 class="section-title">Portfolio Control Center</h1><p class="section-sub">A quick view of your portfolio content and current activity.</p></div></div>
-    <div class="admin-stats">
+  <section class="admin-dashboard-content" id="overview">
+    <div class="admin-heading admin-view-panel" data-admin-view-panel="overview"><div><div class="dashboard-kicker">Control Center</div><h2 class="section-title">Dashboard</h2><p class="section-sub">Manage your portfolio content and review current activity.</p></div><a href="#view=projects" data-admin-view="projects" class="btn btn-primary admin-add-button">+ Add project</a></div>
+    <div class="admin-stats admin-view-panel" data-admin-view-panel="overview">
       <div class="admin-stat-card glass"><span class="admin-stat-icon">◈</span><div><strong id="publishedProjectCount">04</strong><span>Published projects</span></div><em>+1 this month</em></div>
-      <div class="admin-stat-card glass"><span class="admin-stat-icon">✉</span><div><strong>03</strong><span>Unread messages</span></div><em class="warning">Needs review</em></div>
+      <div class="admin-stat-card glass"><span class="admin-stat-icon">✉</span><div><strong id="unreadMessageCount">00</strong><span>Unread messages</span></div><em class="warning">Needs review</em></div>
       <div class="admin-stat-card glass"><span class="admin-stat-icon">↗</span><div><strong>78%</strong><span>Profile completeness</span></div><em>On track</em></div>
       <div class="admin-stat-card glass"><span class="admin-stat-icon">✓</span><div><strong>12</strong><span>Technologies listed</span></div><em>Up to date</em></div>
     </div>
     <div class="admin-layout">
-      <section class="admin-panel glass admin-project-editor">
+      <section class="admin-panel glass admin-project-editor admin-view-panel" id="profileEditor" data-admin-view-panel="profile">
         <div class="admin-panel-head"><div><div class="dashboard-kicker">Site content</div><h2>Profile and contact information</h2></div><span class="admin-updated">Saved in this browser</span></div>
         <form id="profileForm" class="admin-form">
           <div class="admin-form-grid">
@@ -56,7 +70,7 @@
           <div class="admin-form-actions"><button type="submit" class="btn btn-primary">Save site information</button><button type="reset" class="btn btn-outline">Clear</button><span id="profileFormMessage" role="status"></span></div>
         </form>
       </section>
-      <section class="admin-panel glass admin-project-editor">
+      <section class="admin-panel glass admin-project-editor admin-view-panel" id="projectEditor" data-admin-view-panel="projects">
         <div class="admin-panel-head"><div><div class="dashboard-kicker">Add content</div><h2>New project information</h2></div><span class="admin-updated">Saved in this browser</span></div>
         <form id="projectForm" class="admin-form">
           <div class="admin-form-grid">
@@ -75,18 +89,23 @@
           <div class="admin-form-actions"><button type="submit" class="btn btn-primary">Add project</button><button type="reset" class="btn btn-outline">Clear</button><span id="projectFormMessage" role="status"></span></div>
         </form>
       </section>
-      <section class="admin-panel glass"><div class="admin-panel-head"><div><div class="dashboard-kicker">Content overview</div><h2>Portfolio sections</h2></div><span class="admin-updated">Updated today</span></div><div class="admin-list">
+      <section class="admin-panel glass admin-view-panel" id="contentOverview" data-admin-view-panel="content"><div class="admin-panel-head"><div><div class="dashboard-kicker">Content overview</div><h2>Portfolio sections</h2></div><span class="admin-updated">Updated today</span></div><div class="admin-list">
         <div class="admin-list-row"><span class="admin-list-mark complete">✓</span><div><strong>About &amp; profile</strong><small>Personal details and introduction</small></div><span class="admin-list-status">Complete</span></div>
         <div class="admin-list-row"><span class="admin-list-mark complete">✓</span><div><strong>Skills &amp; technology</strong><small>12 tools and learning progress</small></div><span class="admin-list-status">Complete</span></div>
         <div class="admin-list-row"><span class="admin-list-mark pending">!</span><div><strong>Projects and contact</strong><small>Replace placeholder links and details</small></div><span class="admin-list-status pending-text">Review</span></div>
       </div></section>
-      <section class="admin-panel glass"><div class="admin-panel-head"><div><div class="dashboard-kicker">Recent activity</div><h2>Workspace updates</h2></div><span class="admin-live-dot"></span></div><div class="activity-list">
+      <section class="admin-panel glass admin-messages-panel admin-view-panel" data-admin-view-panel="messages">
+        <div class="admin-panel-head"><div><div class="dashboard-kicker">Inbox</div><h2>Messages</h2></div><span class="admin-updated" id="messageSummary">No messages</span></div>
+        <div class="message-list" id="messageList"><p class="empty-state">Messages from the contact form will appear here.</p></div>
+      </section>
+      <section class="admin-panel glass admin-view-panel" id="activityPanel" data-admin-view-panel="activity"><div class="admin-panel-head"><div><div class="dashboard-kicker">Recent activity</div><h2>Workspace updates</h2></div><span class="admin-live-dot"></span></div><div class="activity-list">
         <div class="activity-item"><span class="activity-icon blue">✦</span><div><strong>Technology section updated</strong><small>Today · Active card interactions added</small></div></div>
         <div class="activity-item"><span class="activity-icon purple">↗</span><div><strong>Learning dashboard added</strong><small>Yesterday · Progress overview published</small></div></div>
         <div class="activity-item"><span class="activity-icon green">✓</span><div><strong>Portfolio structure checked</strong><small>Aug 24 · Responsive layout verified</small></div></div>
       </div><div class="admin-actions"><a href="../index.html#projects" class="btn btn-primary btn-sm">Manage projects</a><a href="../index.html#contact" class="btn btn-outline btn-sm">View messages</a></div></section>
     </div>
   </section>
+  </div>
 </main>
 <script src="admin.js"></script>
 </body>

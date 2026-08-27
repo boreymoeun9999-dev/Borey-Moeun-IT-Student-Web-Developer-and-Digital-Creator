@@ -454,7 +454,10 @@
       </div>
       <div class="footer-col">
         <h5>Connect</h5>
-        <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Facebook</a><a href="#">Telegram</a>
+        <a href="https://github.com/boreymoeun9999-dev">GitHub</a>
+        <a href="https://www.linkedin.com/in/borey-moeun-36b092407/">LinkedIn</a>
+        <a href="https://www.facebook.com/borey.pk.75">Facebook</a>
+        <a href="https://t.me/reyqualitybattambong">Telegram</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -752,6 +755,17 @@ form.addEventListener('submit', (e)=>{
   if(!message || message.length < 10){ setError('field-message','Message should be at least 10 characters.'); valid=false; } else setError('field-message','');
 
   if(valid){
+    const messages = JSON.parse(localStorage.getItem('portfolioMessages') || '[]');
+    messages.unshift({
+      id: `message-${Date.now()}`,
+      name,
+      email,
+      subject,
+      message,
+      createdAt: new Date().toISOString(),
+      read: false
+    });
+    localStorage.setItem('portfolioMessages', JSON.stringify(messages));
     formMsg.classList.add('show');
     form.reset();
     setTimeout(()=> formMsg.classList.remove('show'), 6000);

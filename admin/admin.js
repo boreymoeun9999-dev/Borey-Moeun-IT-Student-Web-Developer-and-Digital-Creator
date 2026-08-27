@@ -1,6 +1,7 @@
 const authKey = 'portfolioAdminAuthenticated';
 const projectsKey = 'portfolioProjects';
 const profileKey = 'portfolioProfile';
+const messagesKey = 'portfolioMessages';
 const defaultProjectCount = 4;
 const defaultProfile = {
   name: 'BOREY MOEUN', role: 'IT Student & Future Web Programmer', status: 'Available for Learning & Opportunities',
@@ -29,7 +30,74 @@ function updateProjectCount() {
   if (countElement) countElement.textContent = String(count).padStart(2, '0');
 }
 
+function getMessages() {
+  return JSON.parse(localStorage.getItem(messagesKey) || '[]');
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
+}
+
+function formatMessageDate(value) {
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? 'Unknown date' : date.toLocaleString([], {dateStyle: 'medium', timeStyle: 'short'});
+}
+
+function updateMessages() {
+  const messages = getMessages();
+  const unreadCount = messages.filter(message => !message.read).length;
+  const countElement = document.getElementById('unreadMessageCount');
+  const sidebarCountElement = document.getElementById('sidebarMessageCount');
+  const summaryElement = document.getElementById('messageSummary');
+  const listElement = document.getElementById('messageList');
+  if (countElement) countElement.textContent = String(unreadCount).padStart(2, '0');
+  if (sidebarCountElement) sidebarCountElement.textContent = unreadCount;
+  if (summaryElement) summaryElement.textContent = messages.length ? `${messages.length} total | ${unreadCount} unread` : 'No messages';
+  if (!listElement) return;
+  if (!messages.length) {
+    listElement.innerHTML = '<p class="empty-state">Messages from the contact form will appear here.</p>';
+    return;
+  }
+  listElement.innerHTML = messages.map(message => `
+    <article class="message-item${message.read ? '' : ' unread'}">
+      <div class="message-item-head"><div><strong>${escapeHtml(message.subject)}</strong><span>${escapeHtml(message.name)} · <a href="mailto:${escapeHtml(message.email)}">${escapeHtml(message.email)}</a></span></div><time>${formatMessageDate(message.createdAt)}</time></div>
+      <p>${escapeHtml(message.message)}</p>
+      <div class="message-actions"><button type="button" class="btn btn-outline btn-sm" data-message-action="toggle" data-message-id="${message.id}">${message.read ? 'Mark unread' : 'Mark read'}</button><button type="button" class="btn btn-danger btn-sm" data-message-action="delete" data-message-id="${message.id}">Delete</button></div>
+    </article>`).join('');
+}
+
 updateProjectCount();
+updateMessages();
+
+const adminThemeToggle = document.getElementById('adminThemeToggle');
+const savedAdminTheme = localStorage.getItem('portfolioAdminTheme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedAdminTheme);
+adminThemeToggle?.addEventListener('click', () => {
+  const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', nextTheme);
+  localStorage.setItem('portfolioAdminTheme', nextTheme);
+});
+
+const adminNavLinks = [...document.querySelectorAll('.admin-nav a[data-admin-view]')];
+const adminViewPanels = [...document.querySelectorAll('[data-admin-view-panel]')];
+function showAdminView(view) {
+  const selectedView = adminNavLinks.some(link => link.dataset.adminView === view) ? view : 'overview';
+  adminViewPanels.forEach(panel => panel.classList.toggle('is-current', panel.dataset.adminViewPanel === selectedView));
+  adminNavLinks.forEach(link => link.classList.toggle('active', link.dataset.adminView === selectedView));
+  if (selectedView === 'overview') window.scrollTo({top: 0, behavior: 'smooth'});
+}
+function updateAdminView() {
+  const view = new URLSearchParams(window.location.hash.replace('#', '?')).get('view') || window.location.hash.slice(1);
+  const viewMap = {profile: 'profile', projectEditor: 'projects', projectForm: 'projects', activityPanel: 'activity', contentOverview: 'content', messageList: 'messages', overview: 'overview'};
+  showAdminView(viewMap[view] || 'overview');
+}
+adminNavLinks.concat([...document.querySelectorAll('.admin-add-button[data-admin-view]')]).forEach(link => link.addEventListener('click', () => {
+  history.replaceState(null, '', `#view=${link.dataset.adminView}`);
+  showAdminView(link.dataset.adminView);
+}));
+window.addEventListener('hashchange', updateAdminView);
+updateAdminView();
+
 const isDashboard = document.body.classList.contains('admin-page') && Boolean(document.getElementById('adminLogoutBtn'));
 
 if (isDashboard && sessionStorage.getItem(authKey) !== 'true') {
@@ -55,6 +123,11 @@ if (loginForm) {
 }
 
 document.getElementById('adminLogoutBtn')?.addEventListener('click', () => {
+  sessionStorage.removeItem(authKey);
+  window.location.replace('./');
+});
+
+document.getElementById('adminSidebarLogoutBtn')?.addEventListener('click', () => {
   sessionStorage.removeItem(authKey);
   window.location.replace('./');
 });
@@ -90,4 +163,17 @@ projectForm?.addEventListener('submit', (event) => {
   updateProjectCount();
   projectForm.reset();
   document.getElementById('projectFormMessage').textContent = 'Project added to your portfolio.';
+});
+
+document.getElementById('messageList')?.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-message-action]');
+  if (!button) return;
+  const messageId = button.dataset.messageId;
+  const messages = getMessages();
+  if (button.dataset.messageAction === 'delete') {
+    localStorage.setItem(messagesKey, JSON.stringify(messages.filter(message => message.id !== messageId)));
+  } else {
+    localStorage.setItem(messagesKey, JSON.stringify(messages.map(message => message.id === messageId ? {...message, read: !message.read} : message)));
+  }
+  updateMessages();
 });
