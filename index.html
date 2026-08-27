@@ -1,776 +1,1162 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Borey Moeun | IT Student, Web Developer and Digital Creator </title>
-<meta name="description" content="Portfolio of Borey Moeun, an IT student and future web programmer building thoughtful digital experiences with modern technology.">
-<meta name="keywords" content="IT student portfolio, web developer, Passerelles Numériques Cambodia, PNC, web programming, Cambodia">
-<meta property="og:title" content="Borey Moeun — IT Student & Future Web Developer">
-<meta property="og:description" content="IT student and future web programmer building modern websites and learning full-stack development.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<meta name="google-site-verification" content="លេខកូដសម្ងាត់របស់ខ្លូនឯង" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borey Moeun | IT Student, Web Developer and Digital Creator </title>
+  <meta name="description"
+    content="Portfolio of Borey Moeun, an IT student and future web programmer building thoughtful digital experiences with modern technology.">
+  <meta name="keywords"
+    content="IT student portfolio, web developer, Passerelles Numériques Cambodia, PNC, web programming, Cambodia">
+  <meta property="og:title" content="Borey Moeun — IT Student & Future Web Developer">
+  <meta property="og:description"
+    content="IT student and future web programmer building modern websites and learning full-stack development.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="google-site-verification" content="លេខកូដសម្ងាត់របស់ខ្លូនឯង" />
+  <link rel="icon" type="image/png" href="./img/borey dev.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/borey dev.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/borey dev.png">
+  <link rel="apple-touch-icon" href="./img/borey dev.png">
 </head>
+
 <body>
-<div id="loader"><div class="loader-mark">$ initializing_portfolio...</div><div class="loader-bar"></div></div>
-
-<div class="grid-bg" aria-hidden="true"></div>
-<div class="digital-network" aria-hidden="true"></div>
-<div class="glow-orb glow-1" aria-hidden="true"></div>
-<div class="glow-orb glow-2" aria-hidden="true"></div>
-<div class="glow-orb glow-3" aria-hidden="true"></div>
-
-<!-- ============ HEADER / NAV ============ -->
-<header id="siteHeader">
-  <div class="container">
-    <nav>
-      <a href="#home" class="logo"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#technology">Technology</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">🌙</button>
-        <a href="/admin/" class="login-icon" aria-label="Open admin login" title="Admin login">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
-        </a>
-        <a href="#" class="btn btn-primary btn-sm" id="downloadCvBtn">Download CV</a>
-        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
-      </div>
-    </nav>
+  <div id="loader">
+    <div class="loader-mark">$ Borey_Moeun_portfolio...</div>
+    <div class="loader-bar"></div>
   </div>
-</header>
 
-<div class="menu-overlay" id="menuOverlay"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <button class="close-menu" id="closeMenuBtn" aria-label="Close menu">✕</button>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#technology">Technology</a>
-  <a href="#projects">Projects</a>
-  <a href="#education">Education</a>
-  <a href="#achievements">Achievements</a>
-  <a href="#experience">Experience</a>
-  <a href="#contact">Contact</a>
-  <a href="admin/">Admin login</a>
-</div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="digital-network" aria-hidden="true"></div>
+  <div class="glow-orb glow-1" aria-hidden="true"></div>
+  <div class="glow-orb glow-2" aria-hidden="true"></div>
+  <div class="glow-orb glow-3" aria-hidden="true"></div>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="status-badge glass"><span class="pulse"></span> <span data-profile="status">Available for Learning &amp; Opportunities</span></div>
-        <h1 class="hero-title">Hi, I'm <span class="name grad-text" data-profile="name">BOREY MOEUN</span></h1>
-        <div class="hero-role" data-profile="role">IT Student &amp; Future Web Programmer<span class="cursor"></span></div>
-        <p class="hero-desc" data-profile="heroDescription">I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.</p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn btn-primary">View My Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-          <a href="#" class="btn btn-outline" id="downloadCvBtn2">Download CV</a>
+  <!-- ============ HEADER / NAV ============ -->
+  <header id="siteHeader">
+    <div class="container">
+      <nav>
+        <a href="#home" class="logo"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#technology">Technology</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="tech-pills">
-          <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span>
-          <span class="tech-pill">Git</span><span class="tech-pill">Github</span><span class="tech-pill">Python</span><span class="tech-pill">Figma and Photo shop</span>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">🌙</button>
+          <a href="/admin/" class="login-icon" aria-label="Open admin login" title="Admin login">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+            </svg>
+          </a>
+          <!-- <a href="#" class="btn btn-primary btn-sm" id="downloadCvBtn">Download CV</a> -->
+          <button class="hamburger" id="hamburgerBtn"
+            aria-label="Open menu"><span></span><span></span><span></span></button>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div style="position:relative;">
-          <div class="avatar-ring" aria-hidden="true"></div>
-          <div class="avatar-frame">
-            <img src="/img/1.png" alt="Professional profile photo" data-profile-image="image">
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenuBtn" aria-label="Close menu">✕</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#technology">Technology</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="admin/">Admin login</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="status-badge glass"><span class="pulse"></span> <span data-profile="status">Available for Learning
+              &amp; Opportunities</span></div>
+          <h1 class="hero-title">Hi, I'm <span class="name grad-text" data-profile="name">BOREY MOEUN</span></h1>
+          <div class="hero-role" data-profile="role">IT Student &amp; Future Web Programmer<span class="cursor"></span>
           </div>
-          <div class="terminal glass">
-            <div class="terminal-bar"><span></span><span></span><span></span></div>
-            <div class="terminal-body">
-              <div class="line"><span class="prompt">$</span> whoami</div>
-              <div class="line out">Borey_Moeun — web_programming_student</div>
-              <div class="line"><span class="prompt">$</span> status</div>
-              <div class="line out">learning::frontend + backend<span class="tcursor"></span></div>
+          <p class="hero-desc" data-profile="heroDescription">I'm a passionate IT student who enjoys building modern
+            websites, learning new technologies, solving problems, and turning ideas into real digital experiences.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="#" class="btn btn-outline" id="downloadCvBtn2">Download CV</a>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span
+              class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Git</span><span class="tech-pill">Github</span><span
+              class="tech-pill">Python</span><span class="tech-pill">Figma and Photo shop</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div style="position:relative;">
+            <div class="avatar-ring" aria-hidden="true"></div>
+            <div class="avatar-frame">
+              <img src="/img/1.png" alt="Professional profile photo" data-profile-image="image">
+            </div>
+            <div class="terminal glass">
+              <div class="terminal-bar"><span></span><span></span><span></span></div>
+              <div class="terminal-body">
+                <div class="line"><span class="prompt">$</span> whoami</div>
+                <div class="line out">Borey_Moeun — web_programming_student</div>
+                <div class="line"><span class="prompt">$</span> status</div>
+                <div class="line out">learning::frontend + backend<span class="tcursor"></span></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="scroll-cue"><div class="mouse"></div>SCROLL</div>
-</section>
+    <div class="scroll-cue">
+      <div class="mouse"></div>SCROLL
+    </div>
+  </section>
 
-<!-- ============ ABOUT ============ -->
-<section id="about">
-  <div class="container">
-    <div class="eyebrow reveal">Who I Am</div>
-    <h2 class="section-title reveal">About Me</h2>
-    <div class="about-grid">
-      <div class="about-img-wrap reveal">
-        <img src="/img/2.jpg" alt="Placeholder photo of a programming workspace with laptop and code">
-        <div class="code-chip glass">&lt;/&gt; building since 2026</div>
-      </div>
-      <div class="reveal">
-        <p style="color:var(--text-dim); font-size:15.5px;" data-profile="aboutText">I'm a first-year student at Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.</p>
-        <div class="about-statement" data-profile="statement">"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."</div>
-        <div class="info-cards">
-          <div class="info-card glass"><div class="ic-label">🎓 Education</div><div class="ic-value" data-profile="education">Passerelles Numériques Cambodia</div></div>
-          <div class="info-card glass"><div class="ic-label">💻 Major</div><div class="ic-value" data-profile="major">Web Programming</div></div>
-          <div class="info-card glass"><div class="ic-label">📅 Generation</div><div class="ic-value" data-profile="generation">2027</div></div>
-          <div class="info-card glass"><div class="ic-label">🌍 Location</div><div class="ic-value" data-profile="location">Cambodia</div></div>
-          <div class="info-card glass" style="grid-column:1 / -1;"><div class="ic-label">🚀 Goal</div><div class="ic-value" data-profile="goal">Become a Professional Developer</div></div>
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <div class="eyebrow reveal">Who I Am</div>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <img src="/img/2.jpg" alt="Placeholder photo of a programming workspace with laptop and code">
+          <div class="code-chip glass">&lt;/&gt; building since 2026</div>
         </div>
-      </div>
-    </div>
-
-    <div class="counters reveal-stagger">
-      <div class="counter-item glass" style="padding:26px 10px;"><div class="counter-num" data-count="1">0</div><div class="counter-label">Year at PNC</div></div>
-      <div class="counter-item glass" style="padding:26px 10px;"><div class="counter-num" data-count="4">0</div><div class="counter-label">Projects Built</div></div>
-      <div class="counter-item glass" style="padding:26px 10px;"><div class="counter-num" data-count="10">0</div><div class="counter-label">Technologies Learning</div></div>
-      <div class="counter-item glass" style="padding:26px 10px;"><div class="counter-num" data-count="2027">0</div><div class="counter-label">Graduation Target</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SKILLS ============ -->
-<section id="skills" style="background:var(--bg-alt);">
-  <div class="container">
-    <div class="eyebrow reveal">Capabilities</div>
-    <h2 class="section-title reveal">Skills Dashboard</h2>
-    <p class="section-sub reveal">A honest snapshot of where I am right now — building steadily, one project at a time.</p>
-
-    <div class="skills-tabs reveal">
-      <button class="skill-tab active" data-tab="frontend">Frontend</button>
-      <button class="skill-tab" data-tab="backend">Backend</button>
-      <button class="skill-tab" data-tab="database">Database</button>
-      <button class="skill-tab" data-tab="tools">Tools</button>
-    </div>
-
-    <div class="skill-panel active" id="panel-frontend" data-skill-category="frontend">
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">HTML5</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">CSS3</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">JavaScript</span><span class="skill-level">Learning</span></div><div class="bar-track"><div class="bar-fill" data-w="50"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Responsive Design</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="65"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">React.js</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
-    </div>
-    <div class="skill-panel" id="panel-backend" data-skill-category="backend">
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Node.js</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Python</span><span class="skill-level">Learning</span></div><div class="bar-track"><div class="bar-fill" data-w="45"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Flask</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="25"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">REST API</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
-    </div>
-    <div class="skill-panel" id="panel-database" data-skill-category="database">
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">MySQL</span><span class="skill-level">Learning</span></div><div class="bar-track"><div class="bar-fill" data-w="40"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">SQLite</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">MongoDB</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="20"></div></div></div>
-    </div>
-    <div class="skill-panel" id="panel-tools" data-skill-category="tools">
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Git</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">GitHub</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">VS Code</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Figma</span><span class="skill-level">Beginner</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
-      <div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">Microsoft Office</span><span class="skill-level">Intermediate</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TECHNOLOGY ============ -->
-<section id="technology">
-  <div class="container">
-    <div class="eyebrow reveal">Toolkit</div>
-    <h2 class="section-title reveal">Technologies I Work With</h2>
-    <p class="section-sub reveal">Hover a card to see how I use it.</p>
-    <div class="tech-grid reveal-stagger" id="technologyGrid">
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟧</div><div class="tc-name">HTML5</div><div class="tc-desc glass">Semantic structure for accessible, SEO-friendly pages.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟦</div><div class="tc-name">CSS3</div><div class="tc-desc glass">Layouts, animations, and responsive styling.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟨</div><div class="tc-name">JavaScript</div><div class="tc-desc glass">Interactivity, DOM logic, and dynamic behavior.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">⚛️</div><div class="tc-name">React</div><div class="tc-desc glass">Building reusable, component-based interfaces.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🟩</div><div class="tc-name">Node.js</div><div class="tc-desc glass">Server-side JavaScript for backend logic.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🐍</div><div class="tc-name">Python</div><div class="tc-desc glass">Scripting, logic practice, and backend basics.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🧪</div><div class="tc-name">Flask</div><div class="tc-desc glass">Lightweight Python framework for small APIs.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🐬</div><div class="tc-name">MySQL</div><div class="tc-desc glass">Relational databases and structured queries.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🍃</div><div class="tc-name">MongoDB</div><div class="tc-desc glass">Document-based storage for flexible data.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🔀</div><div class="tc-name">Git</div><div class="tc-desc glass">Version control for tracking every change.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🐙</div><div class="tc-name">GitHub</div><div class="tc-desc glass">Hosting repositories and collaborating on code.</div></div>
-      <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">🎨</div><div class="tc-name">Figma</div><div class="tc-desc glass">Designing wireframes and UI mockups.</div></div>
-    </div>
-  </div>
-</section>
-<!-- ============ PROJECTS ============ -->
-<section id="projects" style="background:var(--bg-alt);">
-  <div class="container">
-    <div class="eyebrow reveal">Selected Work</div>
-    <h2 class="section-title reveal">Projects</h2>
-    <p class="section-sub reveal">A few things I've built while learning. Click any card for the full breakdown.</p>
-
-    <div class="filter-bar reveal">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="frontend">Frontend</button>
-      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
-      <button class="filter-btn" data-filter="concept">Concept</button>
-    </div>
-
-    <div class="projects-grid reveal-stagger" id="projectsGrid">
-      <!-- injected by JS -->
-    </div>
-
-    <div class="center-btn reveal"><a href="#projects" class="btn btn-outline">View All Projects</a></div>
-  </div>
-</section>
-
-<div class="modal-overlay" id="projectModal">
-  <div class="modal-box" style="position:relative;">
-    <button class="modal-close" id="modalClose" aria-label="Close project details">✕</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
-
-<!-- ============ EDUCATION ============ -->
-<section id="education">
-  <div class="container">
-    <div class="eyebrow reveal">Academic Path</div>
-    <h2 class="section-title reveal">Education</h2>
-    <p class="section-sub reveal">Currently enrolled, building the foundation for a career in tech.</p>
-    <div class="timeline reveal">
-      <div class="tl-item">
-        <div class="tl-card glass">
-          <div class="tl-date">2026 — Present · Generation 2027</div>
-          <div class="tl-title">Web Programming Student</div>
-          <div class="tl-org">Passerelles Numériques Cambodia (PNC)</div>
-          <div class="tl-tags">
-            <span>Programming</span><span>Web Development</span><span>English</span><span>Communication</span>
-            <span>Basic Computer</span><span>MS Office</span><span>Logic</span><span>Professional Skills</span>
+        <div class="reveal">
+          <p style="color:var(--text-dim); font-size:15.5px;" data-profile="aboutText">I'm a first-year student at
+            Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in
+            technology and software development, and I'm currently learning both frontend and backend development. I
+            care about creating digital products that are useful and user-friendly, and I'm continuously working on
+            improving my technical and communication skills.</p>
+          <div class="about-statement" data-profile="statement">"I believe that technology is not only about writing
+            code. It is about solving problems, helping people, and creating meaningful digital experiences."</div>
+          <div class="info-cards">
+            <div class="info-card glass">
+              <div class="ic-label">🎓 Education</div>
+              <div class="ic-value" data-profile="education">Passerelles Numériques Cambodia</div>
+            </div>
+            <div class="info-card glass">
+              <div class="ic-label">💻 Major</div>
+              <div class="ic-value" data-profile="major">Web Programming</div>
+            </div>
+            <div class="info-card glass">
+              <div class="ic-label">📅 Generation</div>
+              <div class="ic-value" data-profile="generation">2027</div>
+            </div>
+            <div class="info-card glass">
+              <div class="ic-label">🌍 Location</div>
+              <div class="ic-value" data-profile="location">Cambodia</div>
+            </div>
+            <div class="info-card glass" style="grid-column:1 / -1;">
+              <div class="ic-label">🚀 Goal</div>
+              <div class="ic-value" data-profile="goal">Become a Professional Developer</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="tl-item">
-        <div class="tl-card glass">
-          <div class="tl-date">Milestone</div>
-          <div class="tl-title">Foundations Completed</div>
-          <div class="tl-org">Programming logic, basic computer literacy, and English communication fundamentals</div>
+
+      <div class="counters reveal-stagger">
+        <div class="counter-item glass" style="padding:26px 10px;">
+          <div class="counter-num" data-count="1">0</div>
+          <div class="counter-label">Year at PNC</div>
         </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-card glass">
-          <div class="tl-date">In Progress</div>
-          <div class="tl-title">Web Development Track</div>
-          <div class="tl-org">HTML, CSS, JavaScript, and early full-stack concepts</div>
+        <div class="counter-item glass" style="padding:26px 10px;">
+          <div class="counter-num" data-count="4">0</div>
+          <div class="counter-label">Projects Built</div>
+        </div>
+        <div class="counter-item glass" style="padding:26px 10px;">
+          <div class="counter-num" data-count="10">0</div>
+          <div class="counter-label">Technologies Learning</div>
+        </div>
+        <div class="counter-item glass" style="padding:26px 10px;">
+          <div class="counter-num" data-count="2027">0</div>
+          <div class="counter-label">Graduation Target</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ ACHIEVEMENTS ============ -->
-<section id="achievements" style="background:var(--bg-alt);">
-  <div class="container">
-    <div class="eyebrow reveal">Recognition</div>
-    <h2 class="section-title reveal">Achievements &amp; Certificates</h2>
-    <p class="section-sub reveal">Placeholders — swap in your real certificates and dates.</p>
-    <div class="cert-grid reveal-stagger">
-      <div class="cert-card glass">
-        <div class="cert-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80" alt="Placeholder certificate image"></div>
-        <div class="cert-body">
-          <div class="cert-cat">Programming</div>
-          <div class="cert-title">Intro to Web Programming</div>
-          <div class="cert-org">Passerelles Numériques Cambodia · 2026</div>
-          <div class="cert-desc">Completed foundational coursework in HTML, CSS, and programming logic.</div>
-        </div>
-      </div>
-      <div class="cert-card glass">
-        <div class="cert-img"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=80" alt="Placeholder certificate image"></div>
-        <div class="cert-body">
-          <div class="cert-cat">English</div>
-          <div class="cert-title">English Communication Certificate</div>
-          <div class="cert-org">PNC Language Program · 2026</div>
-          <div class="cert-desc">Certificate for completing English communication training modules.</div>
-        </div>
-      </div>
-      <div class="cert-card glass">
-        <div class="cert-img"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=80" alt="Placeholder workshop image"></div>
-        <div class="cert-body">
-          <div class="cert-cat">Workshop</div>
-          <div class="cert-title">Intro to Technology Workshop</div>
-          <div class="cert-org">PNC Tech Series · 2026</div>
-          <div class="cert-desc">Hands-on workshop covering digital tools and basic computer skills.</div>
-        </div>
-      </div>
-      <div class="cert-card glass">
-        <div class="cert-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" alt="Placeholder school activity image"></div>
-        <div class="cert-body">
-          <div class="cert-cat">School Activity</div>
-          <div class="cert-title">Class Presentation Day</div>
-          <div class="cert-org">PNC Campus Event · 2026</div>
-          <div class="cert-desc">Presented a group project to classmates and instructors.</div>
-        </div>
-      </div>
-      <div class="cert-card glass">
-        <div class="cert-img"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80" alt="Placeholder team project image"></div>
-        <div class="cert-body">
-          <div class="cert-cat">Team Project</div>
-          <div class="cert-title">Group Website Build</div>
-          <div class="cert-org">PNC Web Programming Class · 2026</div>
-          <div class="cert-desc">Collaborated with classmates to design and build a small website.</div>
-        </div>
-      </div>
-      <div class="cert-card glass">
-        <div class="cert-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80" alt="Placeholder competition image"></div>
-        <div class="cert-body">
-          <div class="cert-cat">Competition</div>
-          <div class="cert-title">Internal Coding Challenge</div>
-          <div class="cert-org">PNC Student Activity · 2026</div>
-          <div class="cert-desc">Participated in a friendly coding challenge among classmates.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="eyebrow reveal">Capabilities</div>
+      <h2 class="section-title reveal">Skills Dashboard</h2>
+      <p class="section-sub reveal">A honest snapshot of where I am right now — building steadily, one project at a
+        time.</p>
 
-<!-- ============ EXPERIENCE ============ -->
-<section id="experience">
-  <div class="container">
-    <div class="eyebrow reveal">Hands-On Practice</div>
-    <h2 class="section-title reveal">Learning &amp; Practical Experience</h2>
-    <p class="section-sub reveal">As a student, my "experience" is practice — real projects, real teamwork, real iteration.</p>
-    <div class="timeline reveal">
-      <div class="tl-item"><div class="tl-card glass"><div class="tl-date">Ongoing</div><div class="tl-title">Academic &amp; Team Projects</div><div class="tl-org">Building websites individually and in small groups as part of coursework.</div></div></div>
-      <div class="tl-item"><div class="tl-card glass"><div class="tl-date">Ongoing</div><div class="tl-title">Programming Practice</div><div class="tl-org">Daily practice with HTML, CSS, JavaScript, and logic exercises.</div></div></div>
-      <div class="tl-item"><div class="tl-card glass"><div class="tl-date">Ongoing</div><div class="tl-title">Presentation Experience</div><div class="tl-org">Presenting project work to classmates and instructors to build confidence.</div></div></div>
-      <div class="tl-item"><div class="tl-card glass"><div class="tl-date">Ongoing</div><div class="tl-title">Research &amp; UI/UX Practice</div><div class="tl-org">Exploring design tools like Figma and researching best practices for usability.</div></div></div>
-      <div class="tl-item"><div class="tl-card glass"><div class="tl-date">Ongoing</div><div class="tl-title">Git/GitHub Practice</div><div class="tl-org">Version-controlling projects and learning collaborative workflows.</div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SOFT SKILLS ============ -->
-<section style="background:var(--bg-alt);">
-  <div class="container">
-    <div class="eyebrow reveal">Beyond the Code</div>
-    <h2 class="section-title reveal">Soft Skills</h2>
-    <div class="soft-grid reveal-stagger">
-      <div class="soft-card glass"><div class="soft-icon">💬</div><div class="soft-name">Communication</div></div>
-      <div class="soft-card glass"><div class="soft-icon">🤝</div><div class="soft-name">Teamwork</div></div>
-      <div class="soft-card glass"><div class="soft-icon">🧩</div><div class="soft-name">Problem Solving</div></div>
-      <div class="soft-card glass"><div class="soft-icon">⏱️</div><div class="soft-name">Time Management</div></div>
-      <div class="soft-card glass"><div class="soft-icon">🎨</div><div class="soft-name">Creativity</div></div>
-      <div class="soft-card glass"><div class="soft-icon">🔄</div><div class="soft-name">Adaptability</div></div>
-      <div class="soft-card glass"><div class="soft-icon">🧠</div><div class="soft-name">Critical Thinking</div></div>
-      <div class="soft-card glass"><div class="soft-icon">📚</div><div class="soft-name">Self-Learning</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LEARNING JOURNEY ============ -->
-<section id="journey">
-  <div class="container">
-    <div class="eyebrow reveal">The Roadmap</div>
-    <h2 class="section-title reveal">My Learning Journey</h2>
-    <p class="section-sub reveal">Each step builds on the last — here's where I've been and where I'm headed.</p>
-    <div class="roadmap reveal">
-      <div class="rm-step done"><div class="rm-marker"><div class="rm-dot">✓</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">2026</div><div class="rm-label">Programming Fundamentals</div></div></div>
-      <div class="rm-step done"><div class="rm-marker"><div class="rm-dot">✓</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">2026</div><div class="rm-label">Web Development</div></div></div>
-      <div class="rm-step done"><div class="rm-marker"><div class="rm-dot">3</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">In Progress</div><div class="rm-label">JavaScript</div></div></div>
-      <div class="rm-step"><div class="rm-marker"><div class="rm-dot">4</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">Next</div><div class="rm-label">React.js</div></div></div>
-      <div class="rm-step"><div class="rm-marker"><div class="rm-dot">5</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">Next</div><div class="rm-label">Backend Development</div></div></div>
-      <div class="rm-step"><div class="rm-marker"><div class="rm-dot">6</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">Future</div><div class="rm-label">Database</div></div></div>
-      <div class="rm-step"><div class="rm-marker"><div class="rm-dot">7</div><div class="rm-line"></div></div><div class="rm-content"><div class="rm-year">Future</div><div class="rm-label">Full-Stack Development</div></div></div>
-      <div class="rm-step"><div class="rm-marker"><div class="rm-dot">8</div></div><div class="rm-content"><div class="rm-year">Goal</div><div class="rm-label">Professional Developer</div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FUTURE GOALS ============ -->
-<section style="background:var(--bg-alt);">
-  <div class="container">
-    <div class="eyebrow reveal">Looking Ahead</div>
-    <h2 class="section-title reveal">My Future Goals</h2>
-    <div class="goals-grid reveal-stagger">
-      <div class="goal-card glass"><div class="goal-num">01</div><div class="goal-text">Become a professional Web Developer</div></div>
-      <div class="goal-card glass"><div class="goal-num">02</div><div class="goal-text">Become a Full-Stack Developer</div></div>
-      <div class="goal-card glass"><div class="goal-num">03</div><div class="goal-text">Build real-world applications</div></div>
-      <div class="goal-card glass"><div class="goal-num">04</div><div class="goal-text">Improve English communication</div></div>
-      <div class="goal-card glass"><div class="goal-num">05</div><div class="goal-text">Gain internship experience</div></div>
-      <div class="goal-card glass"><div class="goal-num">06</div><div class="goal-text">Work on meaningful technology projects</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section id="contact">
-  <div class="container">
-    <div class="eyebrow reveal">Get In Touch</div>
-    <h2 class="section-title reveal">Let's Work Together</h2>
-    <p class="section-sub reveal">Have a project idea, opportunity, or simply want to connect? Feel free to contact me.</p>
-    <div class="contact-grid">
-      <div class="reveal">
-        <div class="contact-info-list">
-          <div class="contact-info-item glass"><div class="cii-icon">✉️</div><div><div class="cii-label">Email</div><div class="cii-value" data-profile="email">boreymoeun9999@gmail.com</div></div></div>
-          <div class="contact-info-item glass"><div class="cii-icon">📱</div><div><div class="cii-label">Phone</div><div class="cii-value" data-profile="phone">+855 878 792 47</div></div></div>
-          <div class="contact-info-item glass"><div class="cii-icon">📍</div><div><div class="cii-label">Location</div><div class="cii-value" data-profile="contactLocation">Phnom Penh, Cambodia</div></div></div>
-        </div>
-        <div class="social-row">
-          <a href="#" class="social-btn glass" aria-label="GitHub" data-profile-link="github">🐙</a>
-          <a href="#" class="social-btn glass" aria-label="LinkedIn" data-profile-link="linkedin">💼</a>
-          <a href="#" class="social-btn glass" aria-label="Facebook" data-profile-link="facebook">📘</a>
-          <a href="#" class="social-btn glass" aria-label="Telegram" data-profile-link="telegram">✈️</a>
-        </div>
-        <p class="placeholder-note">* All contact details above are placeholders — replace with your real information.</p>
+      <div class="skills-tabs reveal">
+        <button class="skill-tab active" data-tab="frontend">Frontend</button>
+        <button class="skill-tab" data-tab="backend">Backend</button>
+        <button class="skill-tab" data-tab="database">Database</button>
+        <button class="skill-tab" data-tab="tools">Tools</button>
       </div>
-      <div class="reveal">
-        <form class="form-box glass" id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="field" id="field-name"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" placeholder="Your full name"><span class="err"></span></div>
-            <div class="field" id="field-email"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" placeholder="you@example.com"><span class="err"></span></div>
+
+      <div class="skill-panel active" id="panel-frontend" data-skill-category="frontend">
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">HTML5</span><span class="skill-level">Intermediate</span>
           </div>
-          <div class="field" id="field-subject"><label for="cf-subject">Subject</label><input type="text" id="cf-subject" name="subject" placeholder="What's this about?"><span class="err"></span></div>
-          <div class="field" id="field-message"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" placeholder="Tell me a bit more..."></textarea><span class="err"></span></div>
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
-          <div class="form-msg success" id="formMsg">✓ Message sent! (Demo only — connect a backend or form service to receive real messages.)</div>
-        </form>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="75"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">CSS3</span><span class="skill-level">Intermediate</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="70"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">JavaScript</span><span class="skill-level">Learning</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="50"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Responsive Design</span><span
+              class="skill-level">Intermediate</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="65"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">React.js</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="30"></div>
+          </div>
+        </div>
       </div>
+      <div class="skill-panel" id="panel-backend" data-skill-category="backend">
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Node.js</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="30"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Python</span><span class="skill-level">Learning</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="45"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Flask</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="25"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">REST API</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="30"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-panel" id="panel-database" data-skill-category="database">
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">MySQL</span><span class="skill-level">Learning</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="40"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">SQLite</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="30"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">MongoDB</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="20"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-panel" id="panel-tools" data-skill-category="tools">
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Git</span><span class="skill-level">Intermediate</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="60"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">GitHub</span><span class="skill-level">Intermediate</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="60"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">VS Code</span><span
+              class="skill-level">Intermediate</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="70"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Figma</span><span class="skill-level">Beginner</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="30"></div>
+          </div>
+        </div>
+        <div class="skill-row glass">
+          <div class="skill-row-top"><span class="skill-name">Microsoft Office</span><span
+              class="skill-level">Intermediate</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-w="75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNOLOGY ============ -->
+  <section id="technology">
+    <div class="container">
+      <div class="eyebrow reveal">Toolkit</div>
+      <h2 class="section-title reveal">Technologies I Work With</h2>
+      <p class="section-sub reveal">Hover a card to see how I use it.</p>
+      <div class="tech-grid reveal-stagger" id="technologyGrid">
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🟧</div>
+          <div class="tc-name">HTML5</div>
+          <div class="tc-desc glass">Semantic structure for accessible, SEO-friendly pages.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🟦</div>
+          <div class="tc-name">CSS3</div>
+          <div class="tc-desc glass">Layouts, animations, and responsive styling.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🟨</div>
+          <div class="tc-name">JavaScript</div>
+          <div class="tc-desc glass">Interactivity, DOM logic, and dynamic behavior.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">⚛️</div>
+          <div class="tc-name">React</div>
+          <div class="tc-desc glass">Building reusable, component-based interfaces.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🟩</div>
+          <div class="tc-name">Node.js</div>
+          <div class="tc-desc glass">Server-side JavaScript for backend logic.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🐍</div>
+          <div class="tc-name">Python</div>
+          <div class="tc-desc glass">Scripting, logic practice, and backend basics.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🧪</div>
+          <div class="tc-name">Flask</div>
+          <div class="tc-desc glass">Lightweight Python framework for small APIs.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🐬</div>
+          <div class="tc-name">MySQL</div>
+          <div class="tc-desc glass">Relational databases and structured queries.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🍃</div>
+          <div class="tc-name">MongoDB</div>
+          <div class="tc-desc glass">Document-based storage for flexible data.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🔀</div>
+          <div class="tc-name">Git</div>
+          <div class="tc-desc glass">Version control for tracking every change.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🐙</div>
+          <div class="tc-name">GitHub</div>
+          <div class="tc-desc glass">Hosting repositories and collaborating on code.</div>
+        </div>
+        <div class="tech-card glass" tabindex="0" role="button" aria-pressed="false">
+          <div class="tc-icon">🎨</div>
+          <div class="tc-name">Figma</div>
+          <div class="tc-desc glass">Designing wireframes and UI mockups.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="eyebrow reveal">Selected Work</div>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-sub reveal">A few things I've built while learning. Click any card for the full breakdown.</p>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="concept">Concept</button>
+      </div>
+
+      <div class="projects-grid reveal-stagger" id="projectsGrid">
+        <!-- injected by JS -->
+      </div>
+
+      <div class="center-btn reveal"><a href="#projects" class="btn btn-outline">View All Projects</a></div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box" style="position:relative;">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">✕</button>
+      <div id="modalContent"></div>
     </div>
   </div>
-</section>
 
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <a href="#home" class="logo"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
-        <p class="footer-desc">First-year Web Programming student at Passerelles Numériques Cambodia, Generation 2027 — building my way toward a career in software development.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Navigate</h5>
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h5>Connect</h5>
-        <a href="https://github.com/boreymoeun9999-dev">GitHub</a>
-        <a href="https://www.linkedin.com/in/borey-moeun-36b092407/">LinkedIn</a>
-        <a href="https://www.facebook.com/borey.pk.75">Facebook</a>
-        <a href="https://t.me/reyqualitybattambong">Telegram</a>
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="container">
+      <div class="eyebrow reveal">Academic Path</div>
+      <h2 class="section-title reveal">Education</h2>
+      <p class="section-sub reveal">Currently enrolled, building the foundation for a career in tech.</p>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">2026 — Present · Generation 2027</div>
+            <div class="tl-title">Web Programming Student</div>
+            <div class="tl-org">Passerelles Numériques Cambodia (PNC)</div>
+            <div class="tl-tags">
+              <span>Programming</span><span>Web Development</span><span>English</span><span>Communication</span>
+              <span>Basic Computer</span><span>MS Office</span><span>Logic</span><span>Professional Skills</span>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">Milestone</div>
+            <div class="tl-title">Foundations Completed</div>
+            <div class="tl-org">Programming logic, basic computer literacy, and English communication fundamentals</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">In Progress</div>
+            <div class="tl-title">Web Development Track</div>
+            <div class="tl-org">HTML, CSS, JavaScript, and early full-stack concepts</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Borey Moeun. All Rights Reserved.</p>
-      <p class="made-with">Designed &amp; Built with ❤️ and Code</p>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="eyebrow reveal">Recognition</div>
+      <h2 class="section-title reveal">Achievements &amp; Certificates</h2>
+      <p class="section-sub reveal">Placeholders — swap in your real certificates and dates.</p>
+      <div class="cert-grid reveal-stagger">
+        <div class="cert-card glass">
+          <div class="cert-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80"
+              alt="Placeholder certificate image"></div>
+          <div class="cert-body">
+            <div class="cert-cat">Programming</div>
+            <div class="cert-title">Intro to Web Programming</div>
+            <div class="cert-org">Passerelles Numériques Cambodia · 2026</div>
+            <div class="cert-desc">Completed foundational coursework in HTML, CSS, and programming logic.</div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-img"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=80"
+              alt="Placeholder certificate image"></div>
+          <div class="cert-body">
+            <div class="cert-cat">English</div>
+            <div class="cert-title">English Communication Certificate</div>
+            <div class="cert-org">PNC Language Program · 2026</div>
+            <div class="cert-desc">Certificate for completing English communication training modules.</div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-img"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=80"
+              alt="Placeholder workshop image"></div>
+          <div class="cert-body">
+            <div class="cert-cat">Workshop</div>
+            <div class="cert-title">Intro to Technology Workshop</div>
+            <div class="cert-org">PNC Tech Series · 2026</div>
+            <div class="cert-desc">Hands-on workshop covering digital tools and basic computer skills.</div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80"
+              alt="Placeholder school activity image"></div>
+          <div class="cert-body">
+            <div class="cert-cat">School Activity</div>
+            <div class="cert-title">Class Presentation Day</div>
+            <div class="cert-org">PNC Campus Event · 2026</div>
+            <div class="cert-desc">Presented a group project to classmates and instructors.</div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-img"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80"
+              alt="Placeholder team project image"></div>
+          <div class="cert-body">
+            <div class="cert-cat">Team Project</div>
+            <div class="cert-title">Group Website Build</div>
+            <div class="cert-org">PNC Web Programming Class · 2026</div>
+            <div class="cert-desc">Collaborated with classmates to design and build a small website.</div>
+          </div>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80"
+              alt="Placeholder competition image"></div>
+          <div class="cert-body">
+            <div class="cert-cat">Competition</div>
+            <div class="cert-title">Internal Coding Challenge</div>
+            <div class="cert-org">PNC Student Activity · 2026</div>
+            <div class="cert-desc">Participated in a friendly coding challenge among classmates.</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="container">
+      <div class="eyebrow reveal">Hands-On Practice</div>
+      <h2 class="section-title reveal">Learning &amp; Practical Experience</h2>
+      <p class="section-sub reveal">As a student, my "experience" is practice — real projects, real teamwork, real
+        iteration.</p>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">Ongoing</div>
+            <div class="tl-title">Academic &amp; Team Projects</div>
+            <div class="tl-org">Building websites individually and in small groups as part of coursework.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">Ongoing</div>
+            <div class="tl-title">Programming Practice</div>
+            <div class="tl-org">Daily practice with HTML, CSS, JavaScript, and logic exercises.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">Ongoing</div>
+            <div class="tl-title">Presentation Experience</div>
+            <div class="tl-org">Presenting project work to classmates and instructors to build confidence.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">Ongoing</div>
+            <div class="tl-title">Research &amp; UI/UX Practice</div>
+            <div class="tl-org">Exploring design tools like Figma and researching best practices for usability.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card glass">
+            <div class="tl-date">Ongoing</div>
+            <div class="tl-title">Git/GitHub Practice</div>
+            <div class="tl-org">Version-controlling projects and learning collaborative workflows.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
+  <!-- ============ SOFT SKILLS ============ -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="eyebrow reveal">Beyond the Code</div>
+      <h2 class="section-title reveal">Soft Skills</h2>
+      <div class="soft-grid reveal-stagger">
+        <div class="soft-card glass">
+          <div class="soft-icon">💬</div>
+          <div class="soft-name">Communication</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">🤝</div>
+          <div class="soft-name">Teamwork</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">🧩</div>
+          <div class="soft-name">Problem Solving</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">⏱️</div>
+          <div class="soft-name">Time Management</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">🎨</div>
+          <div class="soft-name">Creativity</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">🔄</div>
+          <div class="soft-name">Adaptability</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">🧠</div>
+          <div class="soft-name">Critical Thinking</div>
+        </div>
+        <div class="soft-card glass">
+          <div class="soft-icon">📚</div>
+          <div class="soft-name">Self-Learning</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-/* ===== Theme toggle ===== */
-const themeToggle = document.getElementById('themeToggle');
-const htmlEl = document.documentElement;
-function applyTheme(t){ htmlEl.setAttribute('data-theme', t); themeToggle.textContent = t === 'dark' ? '🌙' : '☀️'; }
-themeToggle.addEventListener('click', ()=>{
-  const next = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  applyTheme(next);
-});
+  <!-- ============ LEARNING JOURNEY ============ -->
+  <section id="journey">
+    <div class="container">
+      <div class="eyebrow reveal">The Roadmap</div>
+      <h2 class="section-title reveal">My Learning Journey</h2>
+      <p class="section-sub reveal">Each step builds on the last — here's where I've been and where I'm headed.</p>
+      <div class="roadmap reveal">
+        <div class="rm-step done">
+          <div class="rm-marker">
+            <div class="rm-dot">✓</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">2026</div>
+            <div class="rm-label">Programming Fundamentals</div>
+          </div>
+        </div>
+        <div class="rm-step done">
+          <div class="rm-marker">
+            <div class="rm-dot">✓</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">2026</div>
+            <div class="rm-label">Web Development</div>
+          </div>
+        </div>
+        <div class="rm-step done">
+          <div class="rm-marker">
+            <div class="rm-dot">3</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">In Progress</div>
+            <div class="rm-label">JavaScript</div>
+          </div>
+        </div>
+        <div class="rm-step">
+          <div class="rm-marker">
+            <div class="rm-dot">4</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">Next</div>
+            <div class="rm-label">React.js</div>
+          </div>
+        </div>
+        <div class="rm-step">
+          <div class="rm-marker">
+            <div class="rm-dot">5</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">Next</div>
+            <div class="rm-label">Backend Development</div>
+          </div>
+        </div>
+        <div class="rm-step">
+          <div class="rm-marker">
+            <div class="rm-dot">6</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">Future</div>
+            <div class="rm-label">Database</div>
+          </div>
+        </div>
+        <div class="rm-step">
+          <div class="rm-marker">
+            <div class="rm-dot">7</div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">Future</div>
+            <div class="rm-label">Full-Stack Development</div>
+          </div>
+        </div>
+        <div class="rm-step">
+          <div class="rm-marker">
+            <div class="rm-dot">8</div>
+          </div>
+          <div class="rm-content">
+            <div class="rm-year">Goal</div>
+            <div class="rm-label">Professional Developer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-const defaultProfile = {
-  name: 'BOREY MOEUN', role: 'IT Student & Future Web Programmer', status: 'Available for Learning & Opportunities',
-  heroDescription: "I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.",
-  image: '/img/1.png', aboutText: "I'm a first-year student at Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.",
-  statement: '"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."',
-  skillsText: 'frontend | HTML5 | Intermediate | 75\nfrontend | CSS3 | Intermediate | 70\nfrontend | JavaScript | Learning | 50\nbackend | Node.js | Beginner | 30\nbackend | Python | Learning | 45\ndatabase | MySQL | Learning | 40\ntools | Git | Intermediate | 60\ntools | GitHub | Intermediate | 60',
-  technologyText: '🟧 | HTML5 | Semantic structure for accessible, SEO-friendly pages.\n🟦 | CSS3 | Layouts, animations, and responsive styling.\n🟨 | JavaScript | Interactivity, DOM logic, and dynamic behavior.\n⚛️ | React | Building reusable, component-based interfaces.\n🟩 | Node.js | Server-side JavaScript for backend logic.\n🐍 | Python | Scripting, logic practice, and backend basics.',
-  education: 'Passerelles Numériques Cambodia', major: 'Web Programming', generation: '2027', location: 'Cambodia', goal: 'Become a Professional Developer',
-  email: 'boreymoeun9999@gmail.com', phone: '+855 878 792 47', contactLocation: 'Phnom Penh, Cambodia', cvUrl: '',
-  github: '', linkedin: '', facebook: '', telegram: ''
-};
-const profile = {...defaultProfile, ...JSON.parse(localStorage.getItem('portfolioProfile') || '{}')};
-const parseLines = (value, expectedParts) => value.split('\n').map(line => line.split('|').map(part => part.trim())).filter(parts => parts.length >= expectedParts && parts.every(Boolean));
-document.querySelectorAll('[data-skill-category]').forEach(panel => {
-  const skills = parseLines(profile.skillsText, 4).filter(parts => parts[0] === panel.dataset.skillCategory);
-  if (skills.length) panel.innerHTML = skills.map(([, name, level, percent]) => `<div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">${name}</span><span class="skill-level">${level}</span></div><div class="bar-track"><div class="bar-fill" data-w="${Math.min(100, Math.max(0, Number(percent) || 0))}"></div></div></div>`).join('');
-});
-const technologyGrid = document.getElementById('technologyGrid');
-const technologies = parseLines(profile.technologyText, 3);
-if (technologyGrid && technologies.length) technologyGrid.innerHTML = technologies.map(([icon, name, description]) => `<div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">${icon}</div><div class="tc-name">${name}</div><div class="tc-desc glass">${description}</div></div>`).join('');
-document.querySelectorAll('[data-profile]').forEach(element => {
-  element.textContent = profile[element.dataset.profile] || '';
-});
-document.querySelectorAll('[data-profile-image]').forEach(image => {
-  image.src = profile[image.dataset.profileImage] || defaultProfile.image;
-});
-document.querySelectorAll('[data-profile-link]').forEach(link => {
-  const url = profile[link.dataset.profileLink];
-  if (url) link.href = url;
-  else link.setAttribute('aria-disabled', 'true');
-});
+  <!-- ============ FUTURE GOALS ============ -->
+  <section style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="eyebrow reveal">Looking Ahead</div>
+      <h2 class="section-title reveal">My Future Goals</h2>
+      <div class="goals-grid reveal-stagger">
+        <div class="goal-card glass">
+          <div class="goal-num">01</div>
+          <div class="goal-text">Become a professional Web Developer</div>
+        </div>
+        <div class="goal-card glass">
+          <div class="goal-num">02</div>
+          <div class="goal-text">Become a Full-Stack Developer</div>
+        </div>
+        <div class="goal-card glass">
+          <div class="goal-num">03</div>
+          <div class="goal-text">Build real-world applications</div>
+        </div>
+        <div class="goal-card glass">
+          <div class="goal-num">04</div>
+          <div class="goal-text">Improve English communication</div>
+        </div>
+        <div class="goal-card glass">
+          <div class="goal-num">05</div>
+          <div class="goal-text">Gain internship experience</div>
+        </div>
+        <div class="goal-card glass">
+          <div class="goal-num">06</div>
+          <div class="goal-text">Work on meaningful technology projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-/* ===== Download CV (demo placeholder) ===== */
-[document.getElementById('downloadCvBtn'), document.getElementById('downloadCvBtn2')].forEach(btn=>{
-  btn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    if(profile.cvUrl){ window.open(profile.cvUrl, '_blank', 'noopener'); return; }
-    alert('Add your CV file link or PDF here — this button is a placeholder ready to connect to your résumé.');
-  });
-});
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container">
+      <div class="eyebrow reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <p class="section-sub reveal">Have a project idea, opportunity, or simply want to connect? Feel free to contact
+        me.</p>
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-info-list">
+            <div class="contact-info-item glass">
+              <div class="cii-icon">✉️</div>
+              <div>
+                <div class="cii-label">Email</div>
+                <div class="cii-value" data-profile="email">boreymoeun9999@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item glass">
+              <div class="cii-icon">📱</div>
+              <div>
+                <div class="cii-label">Phone</div>
+                <div class="cii-value" data-profile="phone">+855 878 792 47</div>
+              </div>
+            </div>
+            <div class="contact-info-item glass">
+              <div class="cii-icon">📍</div>
+              <div>
+                <div class="cii-label">Location</div>
+                <div class="cii-value" data-profile="contactLocation">Phnom Penh, Cambodia</div>
+              </div>
+            </div>
+          </div>
+          <div class="social-row">
+            <a href="#" class="social-btn glass" aria-label="GitHub" data-profile-link="github">🐙</a>
+            <a href="#" class="social-btn glass" aria-label="LinkedIn" data-profile-link="linkedin">💼</a>
+            <a href="#" class="social-btn glass" aria-label="Facebook" data-profile-link="facebook">📘</a>
+            <a href="#" class="social-btn glass" aria-label="Telegram" data-profile-link="telegram">✈️</a>
+          </div>
+          <p class="placeholder-note">* All contact details above are placeholders — replace with your real information.
+          </p>
+        </div>
+        <div class="reveal">
+          <form class="form-box glass" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field" id="field-name"><label for="cf-name">Name</label><input type="text" id="cf-name"
+                  name="name" placeholder="Your full name"><span class="err"></span></div>
+              <div class="field" id="field-email"><label for="cf-email">Email</label><input type="email" id="cf-email"
+                  name="email" placeholder="you@example.com"><span class="err"></span></div>
+            </div>
+            <div class="field" id="field-subject"><label for="cf-subject">Subject</label><input type="text"
+                id="cf-subject" name="subject" placeholder="What's this about?"><span class="err"></span></div>
+            <div class="field" id="field-message"><label for="cf-message">Message</label><textarea id="cf-message"
+                name="message" rows="5" placeholder="Tell me a bit more..."></textarea><span class="err"></span></div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send
+              Message</button>
+            <div class="form-msg success" id="formMsg">✓ Message sent! (Demo only — connect a backend or form service to
+              receive real messages.)</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-/* ===== Active nav indicator ===== */
-const navAnchors = document.querySelectorAll('.nav-links a');
-const sections = ['home','about','skills','technology','projects','education','achievements','experience','contact'].map(id=>document.getElementById(id)).filter(Boolean);
-function updateActiveNav(){
-  let current = sections[0]?.id;
-  const y = window.scrollY + 140;
-  sections.forEach(sec=>{ if(sec.offsetTop <= y) current = sec.id; });
-  navAnchors.forEach(a=> a.classList.toggle('active', a.getAttribute('href') === '#'+current));
-}
-updateActiveNav();
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="logo"><span class="dot"></span>Borey<span class="grad-text">.dev</span></a>
+          <p class="footer-desc">First-year Web Programming student at Passerelles Numériques Cambodia, Generation 2027
+            — building my way toward a career in software development.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
+            href="#education">Education</a><a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="https://github.com/boreymoeun9999-dev">GitHub</a>
+          <a href="https://www.linkedin.com/in/borey-moeun-36b092407/">LinkedIn</a>
+          <a href="https://www.facebook.com/borey.pk.75">Facebook</a>
+          <a href="https://t.me/reyqualitybattambong">Telegram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Borey Moeun. All Rights Reserved.</p>
+        <p class="made-with">Designed &amp; Built with ❤️ and Code</p>
+      </div>
+    </div>
+  </footer>
 
-/* ===== Scroll reveal ===== */
-const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('in');
-      if(entry.target.querySelectorAll('.bar-fill').length){
-        entry.target.querySelectorAll('.bar-fill').forEach(b=> b.style.width = b.dataset.w + '%');
-      }
-      io.unobserve(entry.target);
-    }
-  });
-}, {threshold:0.15});
-revealEls.forEach(el=> io.observe(el));
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 
-/* ===== Loader ===== */
-window.addEventListener('load', ()=>{ setTimeout(()=>document.getElementById('loader').classList.add('hide'), 500); });
+  <script>
 
-/* ===== Header scroll state ===== */
-const header = document.getElementById('siteHeader');
-const backTop = document.getElementById('backTop');
-window.addEventListener('scroll', ()=>{
-  header.classList.toggle('scrolled', window.scrollY > 40);
-  backTop.classList.toggle('show', window.scrollY > 600);
-  updateActiveNav();
-});
-backTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
-
-/* ===== Mobile menu ===== */
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuOverlay = document.getElementById('menuOverlay');
-const closeMenuBtn = document.getElementById('closeMenuBtn');
-function openMenu(){ mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); }
-function closeMenu(){ mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); }
-hamburgerBtn.addEventListener('click', openMenu);
-closeMenuBtn.addEventListener('click', closeMenu);
-menuOverlay.addEventListener('click', closeMenu);
-document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click', closeMenu));
-/* trigger initial visible skill bars (active panel on load) */
-window.addEventListener('load', ()=>{
-  document.querySelectorAll('#panel-frontend .bar-fill').forEach(b=> b.style.width = b.dataset.w + '%');
-});
-
-/* ===== Animated counters ===== */
-const counters = document.querySelectorAll('.counter-num');
-const counterIO = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const el = entry.target; const target = parseInt(el.dataset.count,10); let cur = 0;
-      const step = Math.max(1, Math.ceil(target/60));
-      const timer = setInterval(()=>{ cur += step; if(cur>=target){cur=target; clearInterval(timer);} el.textContent = cur; }, 25);
-      counterIO.unobserve(el);
-    }
-  });
-}, {threshold:0.4});
-counters.forEach(c=> counterIO.observe(c));
-
-/* ===== Technology card interactions ===== */
-document.querySelectorAll('.tech-card').forEach(card=>{
-  const activate = ()=>{
-    document.querySelectorAll('.tech-card').forEach(item=>{
-      item.classList.remove('active');
-      item.setAttribute('aria-pressed', 'false');
+    /* ===== Theme toggle ===== */
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlEl = document.documentElement;
+    function applyTheme(t) { htmlEl.setAttribute('data-theme', t); themeToggle.textContent = t === 'dark' ? '🌙' : '☀️'; }
+    themeToggle.addEventListener('click', () => {
+      const next = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
     });
-    card.classList.add('active');
-    card.setAttribute('aria-pressed', 'true');
-  };
-  card.addEventListener('click', activate);
-  card.addEventListener('keydown', event=>{
-    if(event.key === 'Enter' || event.key === ' '){
-      event.preventDefault();
-      activate();
+
+    const defaultProfile = {
+      name: 'BOREY MOEUN', role: 'IT Student & Future Web Programmer', status: 'Available for Learning & Opportunities',
+      heroDescription: "I'm a passionate IT student who enjoys building modern websites, learning new technologies, solving problems, and turning ideas into real digital experiences.",
+      image: '/img/1.png', aboutText: "I'm a first-year student at Passerelles Numériques Cambodia, studying Web Programming as part of Generation 2027. I'm interested in technology and software development, and I'm currently learning both frontend and backend development. I care about creating digital products that are useful and user-friendly, and I'm continuously working on improving my technical and communication skills.",
+      statement: '"I believe that technology is not only about writing code. It is about solving problems, helping people, and creating meaningful digital experiences."',
+      skillsText: 'frontend | HTML5 | Intermediate | 75\nfrontend | CSS3 | Intermediate | 70\nfrontend | JavaScript | Learning | 50\nbackend | Node.js | Beginner | 30\nbackend | Python | Learning | 45\ndatabase | MySQL | Learning | 40\ntools | Git | Intermediate | 60\ntools | GitHub | Intermediate | 60',
+      technologyText: '🟧 | HTML5 | Semantic structure for accessible, SEO-friendly pages.\n🟦 | CSS3 | Layouts, animations, and responsive styling.\n🟨 | JavaScript | Interactivity, DOM logic, and dynamic behavior.\n⚛️ | React | Building reusable, component-based interfaces.\n🟩 | Node.js | Server-side JavaScript for backend logic.\n🐍 | Python | Scripting, logic practice, and backend basics.',
+      education: 'Passerelles Numériques Cambodia', major: 'Web Programming', generation: '2027', location: 'Cambodia', goal: 'Become a Professional Developer',
+      email: 'boreymoeun9999@gmail.com', phone: '+855 878 792 47', contactLocation: 'Phnom Penh, Cambodia', cvUrl: '',
+      github: '', linkedin: '', facebook: '', telegram: ''
+    };
+    const profile = { ...defaultProfile, ...JSON.parse(localStorage.getItem('portfolioProfile') || '{}') };
+    const parseLines = (value, expectedParts) => value.split('\n').map(line => line.split('|').map(part => part.trim())).filter(parts => parts.length >= expectedParts && parts.every(Boolean));
+    document.querySelectorAll('[data-skill-category]').forEach(panel => {
+      const skills = parseLines(profile.skillsText, 4).filter(parts => parts[0] === panel.dataset.skillCategory);
+      if (skills.length) panel.innerHTML = skills.map(([, name, level, percent]) => `<div class="skill-row glass"><div class="skill-row-top"><span class="skill-name">${name}</span><span class="skill-level">${level}</span></div><div class="bar-track"><div class="bar-fill" data-w="${Math.min(100, Math.max(0, Number(percent) || 0))}"></div></div></div>`).join('');
+    });
+    const technologyGrid = document.getElementById('technologyGrid');
+    const technologies = parseLines(profile.technologyText, 3);
+    if (technologyGrid && technologies.length) technologyGrid.innerHTML = technologies.map(([icon, name, description]) => `<div class="tech-card glass" tabindex="0" role="button" aria-pressed="false"><div class="tc-icon">${icon}</div><div class="tc-name">${name}</div><div class="tc-desc glass">${description}</div></div>`).join('');
+    document.querySelectorAll('[data-profile]').forEach(element => {
+      element.textContent = profile[element.dataset.profile] || '';
+    });
+    document.querySelectorAll('[data-profile-image]').forEach(image => {
+      image.src = profile[image.dataset.profileImage] || defaultProfile.image;
+    });
+    document.querySelectorAll('[data-profile-link]').forEach(link => {
+      const url = profile[link.dataset.profileLink];
+      if (url) link.href = url;
+      else link.setAttribute('aria-disabled', 'true');
+    });
+
+    /* ===== Download CV (demo placeholder) ===== */
+    [document.getElementById('downloadCvBtn'), document.getElementById('downloadCvBtn2')].forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (profile.cvUrl) { window.open(profile.cvUrl, '_blank', 'noopener'); return; }
+        alert('Add your CV file link or PDF here — this button is a placeholder ready to connect to your résumé.');
+      });
+    });
+
+    /* ===== Active nav indicator ===== */
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    const sections = ['home', 'about', 'skills', 'technology', 'projects', 'education', 'achievements', 'experience', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+    function updateActiveNav() {
+      let current = sections[0]?.id;
+      const y = window.scrollY + 140;
+      sections.forEach(sec => { if (sec.offsetTop <= y) current = sec.id; });
+      navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
     }
-  });
-});
+    updateActiveNav();
 
-/* ===== Skills tabs ===== */
-document.querySelectorAll('.skill-tab').forEach(tab=>{
-  tab.addEventListener('click', ()=>{
-    document.querySelectorAll('.skill-tab').forEach(t=>t.classList.remove('active'));
-    document.querySelectorAll('.skill-panel').forEach(p=>p.classList.remove('active'));
-    tab.classList.add('active');
-    const panel = document.getElementById('panel-'+tab.dataset.tab);
-    panel.classList.add('active');
-    panel.querySelectorAll('.bar-fill').forEach(b=>{ b.style.width='0%'; requestAnimationFrame(()=> setTimeout(()=> b.style.width = b.dataset.w + '%', 30)); });
-  });
-});
+    /* ===== Scroll reveal ===== */
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          if (entry.target.querySelectorAll('.bar-fill').length) {
+            entry.target.querySelectorAll('.bar-fill').forEach(b => b.style.width = b.dataset.w + '%');
+          }
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
 
-/* ===== Projects data + render + filter + modal ===== */
-const defaultProjects = [
-  {
-    id:'p1', title:'Student Portfolio', category:'frontend',
-    img:'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80',
-    desc:'A responsive personal portfolio website showcasing skills, projects, education, and achievements.',
-    tech:['HTML','CSS','JavaScript'],
-    overview:'A single-page personal portfolio built to practice responsive layout and DOM interactivity.',
-    problem:'I needed one place to present my skills and projects to teachers and future employers.',
-    solution:'Designed and coded a responsive multi-section site with smooth navigation and interactive elements.',
-    features:['Responsive layout','Smooth scroll navigation','Project showcase cards','Contact form with validation'],
-    challenges:'Getting the layout to work cleanly across mobile, tablet, and desktop without breaking.',
-    learned:'Deeper understanding of Flexbox/Grid, media queries, and writing clean, reusable CSS.'
-  },
-  {
-    id:'p2', title:'Education Platform', category:'fullstack',
-    img:'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80',
-    desc:'An education platform concept that connects students, teachers, and administrators.',
-    tech:['HTML','CSS','JavaScript','React','Node.js','MySQL'],
-    overview:'A concept full-stack platform exploring how students, teachers, and admins could interact online.',
-    problem:'Small schools often lack an affordable way to manage courses, assignments, and progress digitally.',
-    solution:'Sketched and partially built a platform architecture with authentication and course management.',
-    features:['Student authentication','Course management','Assignments & quizzes','Progress tracking','Notifications','Certificates'],
-    challenges:'Planning a database schema that could handle multiple user roles cleanly.',
-    learned:'How to think through full-stack architecture before writing a single line of code.'
-  },
-  {
-    id:'p3', title:'Coffee Shop Website', category:'frontend',
-    img:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80',
-    desc:'A modern coffee shop website with home, products, promotions, about, and contact pages.',
-    tech:['HTML','CSS','JavaScript'],
-    overview:'A visual, content-driven site to practice UI design and multi-page structure.',
-    problem:'Practice building a business-style website beyond a typical portfolio template.',
-    solution:'Built distinct pages for products, promotions, and contact with a warm, cohesive design.',
-    features:['Product listing','Promotions section','Responsive image gallery','Contact page'],
-    challenges:'Keeping the visual style consistent across every page.',
-    learned:'How to plan a small design system (colors, spacing, type) before coding.'
-  },
-  {
-    id:'p4', title:'IT Awareness Website', category:'concept',
-    img:'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80',
-    desc:'A website explaining IT awareness, digital safety, technology, and responsible digital behavior.',
-    tech:['HTML','CSS','JavaScript'],
-    overview:'An informational site built to raise awareness about digital safety among young people.',
-    problem:'Many students are online daily but are not always taught safe, responsible digital habits.',
-    solution:'Structured clear, simple content sections explaining key digital safety concepts.',
-    features:['Digital safety tips','Responsible use guidelines','Simple quiz-style content','Readable, accessible layout'],
-    challenges:'Explaining technical ideas in plain language for a general audience.',
-    learned:'How to write clearly and structure information for readers who are not tech experts.'
-  }
-];
-const savedProjects = JSON.parse(localStorage.getItem('portfolioProjects') || '[]');
-const projects = [...defaultProjects, ...savedProjects];
+    /* ===== Loader ===== */
+    window.addEventListener('load', () => { setTimeout(() => document.getElementById('loader').classList.add('hide'), 500); });
 
-const grid = document.getElementById('projectsGrid');
-function renderProjects(filter){
-  grid.innerHTML = '';
-  projects.filter(p=> filter==='all' || p.category===filter).forEach(p=>{
-    const card = document.createElement('div');
-    card.className = 'project-card glass';
-    card.innerHTML = `
+    /* ===== Header scroll state ===== */
+    const header = document.getElementById('siteHeader');
+    const backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+      backTop.classList.toggle('show', window.scrollY > 600);
+      updateActiveNav();
+    });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* ===== Mobile menu ===== */
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); }
+    function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); }
+    hamburgerBtn.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', closeMenu));
+    /* trigger initial visible skill bars (active panel on load) */
+    window.addEventListener('load', () => {
+      document.querySelectorAll('#panel-frontend .bar-fill').forEach(b => b.style.width = b.dataset.w + '%');
+    });
+
+    /* ===== Animated counters ===== */
+    const counters = document.querySelectorAll('.counter-num');
+    const counterIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target; const target = parseInt(el.dataset.count, 10); let cur = 0;
+          const step = Math.max(1, Math.ceil(target / 60));
+          const timer = setInterval(() => { cur += step; if (cur >= target) { cur = target; clearInterval(timer); } el.textContent = cur; }, 25);
+          counterIO.unobserve(el);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(c => counterIO.observe(c));
+
+    /* ===== Technology card interactions ===== */
+    document.querySelectorAll('.tech-card').forEach(card => {
+      const activate = () => {
+        document.querySelectorAll('.tech-card').forEach(item => {
+          item.classList.remove('active');
+          item.setAttribute('aria-pressed', 'false');
+        });
+        card.classList.add('active');
+        card.setAttribute('aria-pressed', 'true');
+      };
+      card.addEventListener('click', activate);
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          activate();
+        }
+      });
+    });
+
+    /* ===== Skills tabs ===== */
+    document.querySelectorAll('.skill-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.skill-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.getElementById('panel-' + tab.dataset.tab);
+        panel.classList.add('active');
+        panel.querySelectorAll('.bar-fill').forEach(b => { b.style.width = '0%'; requestAnimationFrame(() => setTimeout(() => b.style.width = b.dataset.w + '%', 30)); });
+      });
+    });
+
+    /* ===== Projects data + render + filter + modal ===== */
+    const defaultProjects = [
+      {
+        id: 'p1', title: 'Student Portfolio', category: 'frontend',
+        img: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80',
+        desc: 'A responsive personal portfolio website showcasing skills, projects, education, and achievements.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        overview: 'A single-page personal portfolio built to practice responsive layout and DOM interactivity.',
+        problem: 'I needed one place to present my skills and projects to teachers and future employers.',
+        solution: 'Designed and coded a responsive multi-section site with smooth navigation and interactive elements.',
+        features: ['Responsive layout', 'Smooth scroll navigation', 'Project showcase cards', 'Contact form with validation'],
+        challenges: 'Getting the layout to work cleanly across mobile, tablet, and desktop without breaking.',
+        learned: 'Deeper understanding of Flexbox/Grid, media queries, and writing clean, reusable CSS.'
+      },
+      {
+        id: 'p2', title: 'Education Platform', category: 'fullstack',
+        img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80',
+        desc: 'An education platform concept that connects students, teachers, and administrators.',
+        tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MySQL'],
+        overview: 'A concept full-stack platform exploring how students, teachers, and admins could interact online.',
+        problem: 'Small schools often lack an affordable way to manage courses, assignments, and progress digitally.',
+        solution: 'Sketched and partially built a platform architecture with authentication and course management.',
+        features: ['Student authentication', 'Course management', 'Assignments & quizzes', 'Progress tracking', 'Notifications', 'Certificates'],
+        challenges: 'Planning a database schema that could handle multiple user roles cleanly.',
+        learned: 'How to think through full-stack architecture before writing a single line of code.'
+      },
+      {
+        id: 'p3', title: 'Coffee Shop Website', category: 'frontend',
+        img: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80',
+        desc: 'A modern coffee shop website with home, products, promotions, about, and contact pages.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        overview: 'A visual, content-driven site to practice UI design and multi-page structure.',
+        problem: 'Practice building a business-style website beyond a typical portfolio template.',
+        solution: 'Built distinct pages for products, promotions, and contact with a warm, cohesive design.',
+        features: ['Product listing', 'Promotions section', 'Responsive image gallery', 'Contact page'],
+        challenges: 'Keeping the visual style consistent across every page.',
+        learned: 'How to plan a small design system (colors, spacing, type) before coding.'
+      },
+      {
+        id: 'p4', title: 'IT Awareness Website', category: 'concept',
+        img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80',
+        desc: 'A website explaining IT awareness, digital safety, technology, and responsible digital behavior.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        overview: 'An informational site built to raise awareness about digital safety among young people.',
+        problem: 'Many students are online daily but are not always taught safe, responsible digital habits.',
+        solution: 'Structured clear, simple content sections explaining key digital safety concepts.',
+        features: ['Digital safety tips', 'Responsible use guidelines', 'Simple quiz-style content', 'Readable, accessible layout'],
+        challenges: 'Explaining technical ideas in plain language for a general audience.',
+        learned: 'How to write clearly and structure information for readers who are not tech experts.'
+      }
+    ];
+    const savedProjects = JSON.parse(localStorage.getItem('portfolioProjects') || '[]');
+    const projects = [...defaultProjects, ...savedProjects];
+
+    const grid = document.getElementById('projectsGrid');
+    function renderProjects(filter) {
+      grid.innerHTML = '';
+      projects.filter(p => filter === 'all' || p.category === filter).forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'project-card glass';
+        card.innerHTML = `
       <div class="pc-img"><img src="${p.img}" alt="Placeholder screenshot for ${p.title} project"></div>
       <div class="pc-body">
         <h3 class="pc-title">${p.title}</h3>
         <p class="pc-desc">${p.desc}</p>
-        <div class="pc-tags">${p.tech.map(t=>`<span class="pc-tag">${t}</span>`).join('')}</div>
+        <div class="pc-tags">${p.tech.map(t => `<span class="pc-tag">${t}</span>`).join('')}</div>
         <div class="pc-actions">
           <a href="#" class="btn btn-outline btn-sm" onclick="event.stopPropagation(); alert('Replace with your real GitHub repo link.')">GitHub</a>
           <a href="#" class="btn btn-primary btn-sm" onclick="event.stopPropagation(); alert('Replace with your real live demo link.')">Live Demo</a>
         </div>
       </div>`;
-    card.addEventListener('click', ()=> openModal(p.id));
-    grid.appendChild(card);
-  });
-}
-renderProjects('all');
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    renderProjects(btn.dataset.filter);
-  });
-});
+        card.addEventListener('click', () => openModal(p.id));
+        grid.appendChild(card);
+      });
+    }
+    renderProjects('all');
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderProjects(btn.dataset.filter);
+      });
+    });
 
-const modal = document.getElementById('projectModal');
-const modalContent = document.getElementById('modalContent');
-function openModal(id){
-  const p = projects.find(x=>x.id===id);
-  modalContent.innerHTML = `
+    const modal = document.getElementById('projectModal');
+    const modalContent = document.getElementById('modalContent');
+    function openModal(id) {
+      const p = projects.find(x => x.id === id);
+      modalContent.innerHTML = `
     <h3>${p.title}</h3>
     <div class="modal-sub">${p.tech.join(' · ')}</div>
     <img src="${p.img}" alt="Placeholder screenshot for ${p.title}" style="width:100%; height:220px; object-fit:cover;">
     <h4>Overview</h4><p>${p.overview}</p>
     <h4>Problem</h4><p>${p.problem}</p>
     <h4>Solution</h4><p>${p.solution}</p>
-    <h4>Features</h4><ul>${p.features.map(f=>`<li>${f}</li>`).join('')}</ul>
+    <h4>Features</h4><ul>${p.features.map(f => `<li>${f}</li>`).join('')}</ul>
     <h4>Challenges</h4><p>${p.challenges}</p>
     <h4>What I Learned</h4><p>${p.learned}</p>
     <div class="pc-actions" style="margin-top:20px;">
       <a href="#" class="btn btn-outline btn-sm" onclick="event.preventDefault(); alert('Replace with your real GitHub repo link.')">GitHub</a>
       <a href="#" class="btn btn-primary btn-sm" onclick="event.preventDefault(); alert('Replace with your real live demo link.')">Live Demo</a>
     </div>`;
-  modal.classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeModal(){ modal.classList.remove('open'); document.body.style.overflow=''; }
-document.getElementById('modalClose').addEventListener('click', closeModal);
-modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
-document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
-/* ===== Contact form validation ===== */
-const form = document.getElementById('contactForm');
-const formMsg = document.getElementById('formMsg');
-function setError(fieldId, msg){
-  const field = document.getElementById(fieldId);
-  field.classList.toggle('invalid', !!msg);
-  field.querySelector('.err').textContent = msg || '';
-}
-form.addEventListener('submit', (e)=>{
-  e.preventDefault();
-  let valid = true;
-  const name = document.getElementById('cf-name').value.trim();
-  const email = document.getElementById('cf-email').value.trim();
-  const subject = document.getElementById('cf-subject').value.trim();
-  const message = document.getElementById('cf-message').value.trim();
+    /* ===== Contact form validation ===== */
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    function setError(fieldId, msg) {
+      const field = document.getElementById(fieldId);
+      field.classList.toggle('invalid', !!msg);
+      field.querySelector('.err').textContent = msg || '';
+    }
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+      const name = document.getElementById('cf-name').value.trim();
+      const email = document.getElementById('cf-email').value.trim();
+      const subject = document.getElementById('cf-subject').value.trim();
+      const message = document.getElementById('cf-message').value.trim();
 
-  if(!name){ setError('field-name','Please enter your name.'); valid=false; } else setError('field-name','');
-  if(!email){ setError('field-email','Please enter your email.'); valid=false; }
-  else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ setError('field-email','Please enter a valid email address.'); valid=false; }
-  else setError('field-email','');
-  if(!subject){ setError('field-subject','Please enter a subject.'); valid=false; } else setError('field-subject','');
-  if(!message || message.length < 10){ setError('field-message','Message should be at least 10 characters.'); valid=false; } else setError('field-message','');
+      if (!name) { setError('field-name', 'Please enter your name.'); valid = false; } else setError('field-name', '');
+      if (!email) { setError('field-email', 'Please enter your email.'); valid = false; }
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError('field-email', 'Please enter a valid email address.'); valid = false; }
+      else setError('field-email', '');
+      if (!subject) { setError('field-subject', 'Please enter a subject.'); valid = false; } else setError('field-subject', '');
+      if (!message || message.length < 10) { setError('field-message', 'Message should be at least 10 characters.'); valid = false; } else setError('field-message', '');
 
-  if(valid){
-    const messages = JSON.parse(localStorage.getItem('portfolioMessages') || '[]');
-    messages.unshift({
-      id: `message-${Date.now()}`,
-      name,
-      email,
-      subject,
-      message,
-      createdAt: new Date().toISOString(),
-      read: false
+      if (valid) {
+        const messages = JSON.parse(localStorage.getItem('portfolioMessages') || '[]');
+        messages.unshift({
+          id: `message-${Date.now()}`,
+          name,
+          email,
+          subject,
+          message,
+          createdAt: new Date().toISOString(),
+          read: false
+        });
+        localStorage.setItem('portfolioMessages', JSON.stringify(messages));
+        formMsg.classList.add('show');
+        form.reset();
+        setTimeout(() => formMsg.classList.remove('show'), 6000);
+      }
     });
-    localStorage.setItem('portfolioMessages', JSON.stringify(messages));
-    formMsg.classList.add('show');
-    form.reset();
-    setTimeout(()=> formMsg.classList.remove('show'), 6000);
-  }
-});
-</script>
+  </script>
 </body>
+
 </html>
