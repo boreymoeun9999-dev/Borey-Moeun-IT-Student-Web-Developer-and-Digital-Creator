@@ -62,7 +62,7 @@
               stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
           </svg>
         </a>
-        <a href="#" class="btn btn-primary btn-sm" id="downloadCvBtn">Download CV</a>
+        <a href="./document/Borey_Moeun_CV.docx" class="btn btn-primary btn-sm" id="downloadCvBtn" download>Download CV</a>
         <button class="hamburger" id="hamburgerBtn"
           aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
@@ -100,7 +100,7 @@
           <div class="hero-btns">
             <a href="#projects" class="btn btn-primary">View My Projects</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
-            <a href="#" class="btn btn-outline" id="downloadCvBtn2">Download CV</a>
+            <a href="./document/Borey_Moeun_CV.docx" class="btn btn-outline" id="downloadCvBtn2" download>Download CV</a>
           </div>
           <div class="tech-pills">
             <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span
@@ -874,7 +874,7 @@
       skillsText: 'frontend | HTML5 | Intermediate | 75\nfrontend | CSS3 | Intermediate | 70\nfrontend | JavaScript | Learning | 50\nbackend | Node.js | Beginner | 30\nbackend | Python | Learning | 45\ndatabase | MySQL | Learning | 40\ntools | Git | Intermediate | 60\ntools | GitHub | Intermediate | 60',
       technologyText: '🟧 | HTML5 | Semantic structure for accessible, SEO-friendly pages.\n🟦 | CSS3 | Layouts, animations, and responsive styling.\n🟨 | JavaScript | Interactivity, DOM logic, and dynamic behavior.\n⚛️ | React | Building reusable, component-based interfaces.\n🟩 | Node.js | Server-side JavaScript for backend logic.\n🐍 | Python | Scripting, logic practice, and backend basics.',
       education: 'Passerelles Numériques Cambodia', major: 'Web Programming', generation: '2027', location: 'Cambodia', goal: 'Become a Professional Developer',
-      email: 'boreymoeun9999@gmail.com', phone: '+855 878 792 47', contactLocation: 'Phnom Penh, Cambodia', cvUrl: '',
+      email: 'boreymoeun9999@gmail.com', phone: '+855 878 792 47', contactLocation: 'Phnom Penh, Cambodia', cvUrl: './document/Borey_Moeun_CV.docx',
       github: '', linkedin: '', facebook: '', telegram: ''
     };
     const profile = { ...defaultProfile, ...JSON.parse(localStorage.getItem('portfolioProfile') || '{}') };
@@ -898,12 +898,13 @@
       else link.setAttribute('aria-disabled', 'true');
     });
 
-    /* ===== Download CV (demo placeholder) ===== */
+    /* ===== Download CV ===== */
     [document.getElementById('downloadCvBtn'), document.getElementById('downloadCvBtn2')].forEach(btn => {
       btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (profile.cvUrl) { window.open(profile.cvUrl, '_blank', 'noopener'); return; }
-        alert('Add your CV file link or PDF here — this button is a placeholder ready to connect to your résumé.');
+        if (!profile.cvUrl) {
+          e.preventDefault();
+          alert('Add your CV file link or PDF here — this button is a placeholder ready to connect to your résumé.');
+        }
       });
     });
 
